@@ -1,0 +1,44 @@
+name: SteuerWende – Website deployen
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'articles/published/**'
+      - 'static/**'
+      - 'templates/**'
+
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Entwurf → Veröffentlicht verschieben
+        run: |
+          python scripts/approve_draft.py
+
+      - name: Website bauen
+        run: |
+          python scripts/build_site.py
+
+      - name: GitHub Pages deployen
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          publish_branch: gh-pages
+          commit_message: "Deploy: $(date '+%d.%m.%Y %H:%M')"
