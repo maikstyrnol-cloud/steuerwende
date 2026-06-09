@@ -1,4 +1,4 @@
-name: SteuerWende – Artikel generieren & deployen
+name: SteuerWende – Artikel generieren
 
 on:
   schedule:
@@ -12,11 +12,11 @@ on:
         required: false
 
 jobs:
-  generate-and-deploy:
+  generate:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pages: write
+      pull-requests: write
 
     steps:
       - name: Repository auschecken
@@ -37,24 +37,50 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python scripts/generate_article.py
 
-      - name: Entwurf → Veröffentlicht verschieben
-        run: python scripts/approve_draft.py
-
-      - name: Website bauen
-        run: python scripts/build_site.py
-
-      - name: Website deployen
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
-          publish_branch: gh-pages
-          commit_message: "Neuer Artikel: $(date '+%d.%m.%Y %H:%M')"
-
-      - name: Änderungen zurück in main pushen
+      - name: Entwurf als Branch pushen
+        id: push
         run: |
           git config user.name "SteuerWende Bot"
           git config user.email "bot@steuerwende.de"
-          git add articles/published/
-          git diff --staged --quiet || git commit -m "Artikel veröffentlicht: $(date '+%d.%m.%Y %H:%M')"
-          git push origin main
+          TIMESTAMP=$(date +%Y-%m-%d_%H-%M)
+          BRANCH="entwurf/${TIMESTAMP}"
+          git checkout -b $BRANCH
+          git add articles/drafts/
+          git diff --staged --quiet || git commit -m "Neuer Entwurf: $(date '+%d.%m.%Y %H:%M')"
+          git push origin $BRANCH
+          echo "branch=$BRANCH" >> $GITHUB_OUTPUT
+
+      - name: Pull Request erstellen
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const branch = '${{ steps.push.outputs.branch }}';
+            const fs = require('fs');
+            const draftsDir = 'articles/drafts';
+            const files = fs.readdirSync(draftsDir).filter(f => f.endsWith('.json')).sort().reverse();
+            let title = 'Neuer Artikel-Entwurf';
+            let body = '';
+            if (files.length > 0) {
+              const content = JSON.parse(fs.readFileSync(`${draftsDir}/${files[0]}`, 'utf8'));
+              title = `📝 ${content.titel}`;
+              body = `## Neuer Artikel zur Freigabe\n\n` +
+                     `**Titel:** ${content.titel}\n\n` +
+                     `**Kategorie:** ${content.kategorie}\n\n` +
+                     `**Untertitel:** ${content.untertitel}\n\n` +
+                     `**Lesezeit:** ${content.lesezeit} Minuten\n\n` +
+                     `---\n\n` +
+                     `### Artikel freigeben:\n` +
+                     `1. Lies den Artikel im Dateien-Tab\n` +
+                     `2. Alles okay → klicke **"Merge pull request"**\n` +
+                     `3. Nicht okay → klicke **"Close pull request"**\n\n` +
+                     `> Generiert am ${new Date().toLocaleString('de-DE')}`;
+            }
+            await github.rest.pulls.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: title,
+              body: body,
+              head: branch,
+              base: 'main',
+              draft: false
+            });
