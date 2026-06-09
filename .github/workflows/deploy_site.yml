@@ -1,22 +1,17 @@
 name: SteuerWende – Website deployen
 
 on:
-  push:
+  pull_request:
+    types: [closed]
     branches: [main]
-    paths:
-      - 'articles/published/**'
-      - 'static/**'
-      - 'templates/**'
-
-  workflow_dispatch:
 
 jobs:
-  build-and-deploy:
+  deploy:
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     permissions:
       contents: write
       pages: write
-      id-token: write
 
     steps:
       - name: Repository auschecken
@@ -28,17 +23,23 @@ jobs:
           python-version: '3.11'
 
       - name: Entwurf → Veröffentlicht verschieben
-        run: |
-          python scripts/approve_draft.py
+        run: python scripts/approve_draft.py
 
       - name: Website bauen
-        run: |
-          python scripts/build_site.py
+        run: python scripts/build_site.py
 
-      - name: GitHub Pages deployen
+      - name: Website deployen
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
           publish_branch: gh-pages
-          commit_message: "Deploy: $(date '+%d.%m.%Y %H:%M')"
+          commit_message: "Artikel veröffentlicht"
+
+      - name: Änderungen in main speichern
+        run: |
+          git config user.name "SteuerWende Bot"
+          git config user.email "bot@steuerwende.de"
+          git add articles/published/
+          git diff --staged --quiet || git commit -m "Artikel veröffentlicht: $(date '+%d.%m.%Y %H:%M')"
+          git push origin main
