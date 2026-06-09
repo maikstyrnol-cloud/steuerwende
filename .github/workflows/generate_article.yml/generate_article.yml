@@ -1,0 +1,121 @@
+name: SteuerWende – Artikel generieren
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+    - cron: '0 11 * * *'
+    - cron: '0 17 * * *'
+  workflow_dispatch:
+    inputs:
+      force_topic:
+        description: 'Optionales Thema erzwingen'
+        required: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Abhängigkeiten installieren
+        run: pip install anthropic
+
+      - name: Artikel generieren
+        id: generate
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python scripts/generate_article.py
+
+      - name: Entwurf als Branch pushen
+        id: push
+        run: |
+          git config user.name "SteuerWende Bot"
+          git config user.email "bot@steuerwende.de"
+
+          TIMESTAMP=$(date +%Y-%m-%d_%H-%M)
+          BRANCH="entwurf/${TIMESTAMP}"
+
+          git checkout -b $BRANCH
+          git add articles/drafts/
+          git commit -m "Neuer Entwurf: $(date '+%d.%m.%Y %H:%M')"
+          git push origin $BRANCH
+
+          echo "branch=$BRANCH" >> $GITHUB_OUTPUT
+
+      - name: Pull Request erstellen
+        id: pr
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const branch = '${{ steps.push.outputs.branch }}';
+            const fs = require('fs');
+
+            const draftsDir = 'articles/drafts';
+            const files = fs.readdirSync(draftsDir).filter(f => f.endsWith('.json')).sort().reverse();
+            let title = 'Neuer Artikel-Entwurf';
+            let body = '';
+
+            if (files.length > 0) {
+              const content = JSON.parse(fs.readFileSync(`${draftsDir}/${files[0]}`, 'utf8'));
+              title = `📝 Entwurf: ${content.titel}`;
+              body = `## Neuer Artikel-Entwurf\n\n` +
+                     `**Titel:** ${content.titel}\n\n` +
+                     `**Kategorie:** ${content.kategorie}\n\n` +
+                     `**Untertitel:** ${content.untertitel}\n\n` +
+                     `**Lesezeit:** ${content.lesezeit} Minuten\n\n` +
+                     `---\n\n` +
+                     `### So veröffentlichst du:\n\n` +
+                     `1. Lies den Artikel (Dateien-Tab)\n` +
+                     `2. Wenn okay: Klicke **"Merge pull request"**\n` +
+                     `3. Website aktualisiert sich automatisch\n\n` +
+                     `> Generiert am ${new Date().toLocaleString('de-DE')}`;
+            }
+
+            const pr = await github.rest.pulls.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: title,
+              body: body,
+              head: branch,
+              base: 'main',
+              draft: false
+            });
+
+            core.setOutput('pr_url', pr.data.html_url);
+            return pr.data;
+
+      - name: Email-Benachrichtigung senden
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          to: ${{ secrets.NOTIFY_EMAIL }}
+          from: SteuerWende Bot <${{ secrets.MAIL_USERNAME }}>
+          subject: "📝 Neuer Artikel-Entwurf wartet auf Freigabe"
+          body: |
+            Hallo,
+
+            ein neuer Artikel-Entwurf wartet auf deine Freigabe.
+
+            ➡️  Zum Freigeben klicke hier:
+            ${{ steps.pr.outputs.pr_url }}
+
+            Dort kannst du den Artikel lesen und mit einem Klick
+            auf "Merge pull request" veröffentlichen.
+
+            – SteuerWende Bot
