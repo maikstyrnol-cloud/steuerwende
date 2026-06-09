@@ -1,0 +1,62 @@
+{
+  "titel": "Wenn Verbände Steuergesetze mitschreiben",
+  "untertitel": "Wie organisierter Lobbyismus seit Jahrzehnten verhindert, dass Vermögen angemessen besteuert wird – während Arbeitseinkommen immer stärker belastet werden",
+  "kategorie": "Politik",
+  "lesezeit": 6,
+  "inhalt": "<p>In Deutschland werden Arbeitseinkommen mit bis zu 45 Prozent besteuert. Große Vermögen hingegen wachsen weitgehend steuerfrei. Dieser Zustand ist kein Zufall – er ist das Ergebnis jahrzehntelanger, systematischer Einflussnahme von Wirtschaftsverbänden auf die Steuerpolitik.</p><h2>Die Architektur des Einflusses</h2><p>Laut dem Lobbyregister des Bundestages sind über 5.800 Interessenvertretungen registriert (Stand 2024). Unter den finanziell am besten ausgestatteten finden sich regelmäßig Verbände wie der BDI, die Familienunternehmer oder die Initiative Neue Soziale Marktwirtschaft (INSM). Der BDI allein gibt laut eigenen Angaben jährlich zwischen 8,5 und 9,5 Millionen Euro für Interessenvertretung aus. Die INSM, finanziert vom Arbeitgeberverband Gesamtmetall, investiert seit ihrer Gründung im Jahr 2000 geschätzt über 100 Millionen Euro in Kampagnen – ein erheblicher Teil davon gegen Vermögensteuern und Erbschaftsteuerreformen.</p><h2>Das Muster: Einkommensteuer hoch, Vermögensteuer weg</h2><p>Die Strategie folgt einem erkennbaren Muster: Jeder Vorstoß zur stärkeren Besteuerung von Vermögen wird mit dem Argument bekämpft, er gefährde Arbeitsplätze und den Mittelstand. Die Aussetzung der Vermögensteuer 1997, die Absenkung des Spitzensteuersatzes von 53 auf 42 Prozent, die Abgeltungsteuer von nur 25 Prozent auf Kapitalerträge – all diese Reformen wurden von intensiver Verbandsarbeit begleitet.</p><p>Ein Beispiel: Als das Bundesverfassungsgericht 2014 die Erbschaftsteuer in Teilen für verfassungswidrig erklärte, lobbyierten Wirtschaftsverbände erfolgreich für großzügige Verschonungsregeln bei Betriebsvermögen. Das Ergebnis: Laut einer DIW-Studie von 2020 werden Erbschaften ab 20 Millionen Euro effektiv mit unter einem Prozent besteuert – während eine Krankenschwester auf ihr Gehalt rund 30 Prozent Steuern und Abgaben zahlt.</p><h2>Die Drehtür zwischen Verbänden und Ministerien</h2><p>Die Einflussnahme beschränkt sich nicht auf Positionspapiere. Laut einer Studie von LobbyControl (2023) wechselten in den vergangenen zehn Jahren über 600 Personen zwischen Bundesministerien und Lobbyorganisationen. Im Finanzministerium ist die Praxis besonders ausgeprägt: Steuerrechtliche Referentenentwürfe werden routinemäßig in sogenannten Verbändeanhörungen mit Branchenvertretern abgestimmt – oft bevor das Parlament sie überhaupt sieht.</p><h2>Was fehlt: Die Gegenstimme</h2><p>Während Vermögensverbände professionell organisiert sind, gibt es auf der Gegenseite kaum vergleichbare Strukturen. Gewerkschaften und Sozialverbände verfügen über deutlich geringere Budgets für steuerpolitische Lobbyarbeit. Eine OECD-Studie von 2022 stellt fest, dass in kaum einem anderen Industrieland die Diskrepanz zwischen der Besteuerung von Arbeit und Vermögen so groß ist wie in Deutschland. Der effektive Steuersatz auf Arbeit liegt bei 47 Prozent (inklusive Sozialabgaben), der auf Kapitalvermögen bei geschätzt 25 Prozent.</p><h2>Ein strukturelles Demokratieproblem</h2><p>Die Schieflage ist messbar: Deutschland verzichtet laut Schätzungen des DIW durch die ausgesetzte Vermögensteuer auf jährlich rund 20 Milliarden Euro Einnahmen. Gleichzeitig steigen die Sozialbeiträge auf Arbeitseinkommen stetig. Der rote Faden ist klar: Wer von Arbeit lebt, wird stärker belastet. Wer von Vermögen lebt, profitiert von einem System, das durch organisierten Einfluss so gestaltet wurde. Eine Demokratie, in der Steuergesetze maßgeblich von jenen mitgeschrieben werden, die am meisten von Steuervermeidung profitieren, hat ein strukturelles Problem – unabhängig davon, welche Regierung gerade im Amt ist.</p>",
+  "daten_highlight": {
+    "zahl": "47%",
+    "beschreibung": "Effektiver Steuersatz auf Arbeitseinkommen in Deutschland (inkl. Sozialabgaben) – während Kapitalvermögen mit rund 25 Prozent belastet wird",
+    "quelle": "OECD Taxing Wages 2022"
+  },
+  "quellen": [
+    {
+      "autor": "OECD",
+      "titel": "Taxing Wages 2022 – Germany Country Note",
+      "jahr": 2022,
+      "url": "https://www.oecd.org/tax/taxing-wages-20725124.htm"
+    },
+    {
+      "autor": "DIW Berlin",
+      "titel": "Vermögenssteuer: Erhebliches Aufkommenspotenzial trotz Ausnahmen",
+      "jahr": 2020,
+      "url": "https://www.diw.de/de/diw_01.c.739682.de/publikationen/wochenberichte/2020_04/vermoegenssteuer.html"
+    },
+    {
+      "autor": "LobbyControl",
+      "titel": "Lobbyreport 2023 – Schwerpunkt Drehtür",
+      "jahr": 2023,
+      "url": "https://www.lobbycontrol.de/lobbyreport/"
+    },
+    {
+      "autor": "Deutscher Bundestag",
+      "titel": "Lobbyregister – Statistik registrierter Interessenvertretungen",
+      "jahr": 2024,
+      "url": "https://www.lobbyregister.bundestag.de/startseite"
+    },
+    {
+      "autor": "Bach, Stefan / Thiemann, Andreas (DIW)",
+      "titel": "Erbschaftsteuer: Großes Vermögen, kleine Steuer",
+      "jahr": 2020,
+      "url": "https://www.diw.de/de/diw_01.c.793802.de/publikationen/wochenberichte.html"
+    }
+  ],
+  "seo_beschreibung": "Wie Wirtschaftsverbände und Lobbyorganisationen seit Jahrzehnten die deutsche Steuerpolitik beeinflussen und verhindern, dass Vermögen stärker besteuert wird – während Arbeitseinkommen immer höher belastet werden.",
+  "tags": [
+    "BDI Steuerpolitik Lobbying",
+    "Steuerreform blockiert",
+    "Vermögensteuer",
+    "Lobbyismus",
+    "Erbschaftsteuer",
+    "Einkommensteuer",
+    "INSM",
+    "Steuergerechtigkeit"
+  ],
+  "_meta": {
+    "erstellt": "2026-06-09T19:35:28.286931",
+    "status": "veröffentlicht",
+    "slug": "wenn-verbaende-steuergesetze-mitschreiben",
+    "filename": "2026-06-09_19-35_wenn-verbaende-steuergesetze-mitschreiben.json",
+    "veröffentlicht_am": "2026-06-09T19:38:55.302636"
+  }
+}
