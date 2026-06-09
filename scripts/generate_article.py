@@ -53,6 +53,7 @@ Das JSON muss exakt dieses Format haben – mit einem "infografik" Feld:
 
 Für "typ" wähle: "balken" (Vergleiche), "donut" (Anteile/Prozente), oder "zeitstrahl" (Entwicklung ueber Zeit).
 Für "farbe" bei balken: "rot" fuer Deutschland/Hauptwert, "blau" fuer Vergleichswerte, "grau" fuer Nebenwerte.
+- Labels klar und allgemeinverständlich formulieren: "Ärmste 20%" statt "Unterstes Fünftel", Ländernamen ausschreiben, keine Abkürzungen oder Fachtermini.
 Maximal 6 Datenpunkte. Nur echte, belegbare Zahlen verwenden.
 
 Stil: Seriös wie Süddeutsche Zeitung, echte Quellen (OECD, DIW, Bundesbank), max 500 Wörter Artikeltext."""
