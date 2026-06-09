@@ -31,7 +31,7 @@ Antworte NUR mit rohem JSON, kein Markdown:
 }
 
 WICHTIG:
-- Labels maximal 20 Zeichen
+- Labels maximal 20 Zeichen, klar und verständlich formuliert (z.B. 'Ärmste 20%' statt 'Unterstes Fünftel', 'Reichste 20%' statt 'Oberstes Fünftel', Ländernamen statt Abkürzungen)
 - Werte IMMER als Prozentzahl (z.B. 47.8 für 47.8%) oder als einfache Zahl ohne Einheit
 - KEINE Euros, KEINE Milliarden als Werte - nur Prozentzahlen oder Index-Zahlen
 - Für Prozentwerte: 47.8 (nicht 0.478)
