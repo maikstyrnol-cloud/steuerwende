@@ -105,40 +105,33 @@ def build_svg_balken(info):
     daten = info.get("daten", [])
     if not daten:
         return ""
-
     farben = {"rot": "#c8102e", "blau": "#2d6a9f", "grau": "#9ca3af", "gold": "#f0a500"}
     max_wert = max(d["wert"] for d in daten)
-    bar_h = 32
-    gap = 14
-    label_w = 140
-    bar_max_w = 280
-    val_w = 60
-    total_w = label_w + bar_max_w + val_w + 20
-    total_h = len(daten) * (bar_h + gap) + 60
-
+    if max_wert == 0:
+        max_wert = 1
+    bar_h = 30
+    gap = 16
+    label_w = 185
+    bar_max_w = 230
+    pad = 20
+    total_w = pad + label_w + bar_max_w + 80 + pad
+    total_h = len(daten) * (bar_h + gap) + 70
     bars = ""
     for i, d in enumerate(daten):
-        y = 40 + i * (bar_h + gap)
-        w = int((d["wert"] / max_wert) * bar_max_w)
+        y = 44 + i * (bar_h + gap)
+        w = max(3, int((d["wert"] / max_wert) * bar_max_w))
         farbe = farben.get(d.get("farbe", "blau"), "#2d6a9f")
-        label = d["label"][:18]
-        wert = d["wert"]
-        einheit = "%" if wert < 200 else " Mrd."
-        bars += f"""
-    <text x="{label_w - 8}" y="{y + bar_h//2 + 5}" text-anchor="end" font-size="13" fill="#4b5563" font-family="sans-serif">{label}</text>
-    <rect x="{label_w}" y="{y}" width="{w}" height="{bar_h}" fill="{farbe}" rx="2"/>
-    <text x="{label_w + w + 8}" y="{y + bar_h//2 + 5}" font-size="13" font-weight="bold" fill="#1a2332" font-family="sans-serif">{wert}{einheit}</text>"""
-
-    titel = info.get("titel", "")[:50]
-    quelle = info.get("quelle", "")[:60]
-
-    return f"""<svg viewBox="0 0 {total_w} {total_h}" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:520px;display:block;margin:0 auto;">
-  <text x="0" y="22" font-size="14" font-weight="bold" fill="#1a2332" font-family="sans-serif">{titel}</text>
-  {bars}
-  <text x="0" y="{total_h - 8}" font-size="11" fill="#9ca3af" font-family="sans-serif">Quelle: {quelle}</text>
-</svg>"""
-
-
+        if d["wert"] >= 1000:
+            einheit = " Mrd."
+        else:
+            einheit = "%"
+        label = d["label"][:30]
+        bars += f'<text x="{pad + label_w - 8}" y="{y + bar_h//2 + 5}" text-anchor="end" font-size="12" fill="#4b5563" font-family="sans-serif">{label}</text>'
+        bars += f'<rect x="{pad + label_w}" y="{y}" width="{w}" height="{bar_h}" fill="{farbe}" rx="3"/>'
+        bars += f'<text x="{pad + label_w + w + 8}" y="{y + bar_h//2 + 5}" font-size="13" font-weight="bold" fill="#1a2332" font-family="sans-serif">{d["wert"]}{einheit}</text>'
+    titel = info.get("titel", "")[:65]
+    quelle = info.get("quelle", "")[:80]
+    return f'<svg viewBox="0 0 {total_w} {total_h}" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:560px;display:block;margin:0 auto;"><text x="{pad}" y="24" font-size="14" font-weight="bold" fill="#1a2332" font-family="sans-serif">{titel}</text>{bars}<text x="{pad}" y="{total_h - 8}" font-size="11" fill="#9ca3af" font-family="sans-serif">Quelle: {quelle}</text></svg>'
 def build_svg_donut(info):
     """Generiert ein SVG-Donut-Diagramm."""
     daten = info.get("daten", [])
