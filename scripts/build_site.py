@@ -129,9 +129,11 @@ def build_index(articles, out):
         slug = a["_meta"]["slug"]
         datum = format_date(a["_meta"].get("erstellt",""))
         kat_slug = slugify(a.get("kategorie",""))
+        svg = a.get("infografik_svg","")
+        hero_img = '<div class="hero-img hero-svg">' + svg + '</div>' if svg else f'<div class="hero-img cat-{kat_slug}"></div>'
         hero = f"""
     <div class="hero-card">
-      <div class="hero-img cat-{kat_slug}"></div>
+      {hero_img}
       <div class="hero-content">
         <span class="kicker">{a.get("kategorie","")}</span>
         <h2><a href="artikel/{slug}.html">{a.get("titel","")}</a></h2>
