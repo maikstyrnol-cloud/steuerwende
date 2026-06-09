@@ -17,24 +17,28 @@ from pathlib import Path
 ROOT = Path(__file__).parent.parent
 PUBLISHED = ROOT / "articles" / "published"
 
-INFOGRAFIK_PROMPT = """Du bist Datenjournalist bei SteuerWende. Basierend auf diesem Artikel,
-generiere eine passende Infografik mit echten, belegbaren Zahlen.
+INFOGRAFIK_PROMPT = """Du bist Datenjournalist bei SteuerWende. Basierend auf diesem Artikel, generiere eine passende Infografik mit echten belegbaren Zahlen.
 
 Antworte NUR mit rohem JSON, kein Markdown:
 {
   "typ": "balken",
-  "titel": "Kurzer Grafiktitel",
-  "beschreibung": "Was die Grafik zeigt",
+  "titel": "Kurzer Grafiktitel (max 40 Zeichen)",
   "quelle": "OECD 2024",
   "daten": [
     {"label": "Deutschland", "wert": 47.8, "farbe": "rot"},
-    {"label": "Vergleich", "wert": 30.0, "farbe": "blau"}
+    {"label": "Schweden", "wert": 43.0, "farbe": "blau"}
   ]
 }
 
-Fuer "typ": "balken" (Vergleiche), "donut" (Anteile).
-Fuer "farbe": "rot", "blau", "grau", "gold".
-Maximal 6 Datenpunkte. Nur echte Zahlen.
+WICHTIG:
+- Labels maximal 20 Zeichen
+- Werte IMMER als Prozentzahl (z.B. 47.8 für 47.8%) oder als einfache Zahl ohne Einheit
+- KEINE Euros, KEINE Milliarden als Werte - nur Prozentzahlen oder Index-Zahlen
+- Für Prozentwerte: 47.8 (nicht 0.478)
+- Für "typ": "balken" (Vergleiche) oder "donut" (Anteile die 100% ergeben)
+- Für "farbe": "rot" für Deutschland/Hauptwert, "blau" für Vergleich, "grau" für Referenz
+- Maximal 5 Datenpunkte
+- Nur echte, belegbare Zahlen
 
 Artikel:
 """
@@ -136,6 +140,9 @@ def main():
 
         print(f"  🎨 Generiere Infografik für: {article.get('titel','')[:50]}")
         try:
+            # Alte Infografik-Daten löschen damit alles neu generiert wird
+            article.pop("infografik", None)
+            article.pop("infografik_svg", None)
             info = generate_infografik(article)
             article["infografik"] = info
             article["infografik_svg"] = build_svg(info)
