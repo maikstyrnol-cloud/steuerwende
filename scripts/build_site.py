@@ -341,6 +341,166 @@ def build_index(articles: list, output_dir: Path):
     print("  ✅ index.html")
 
 
+def build_static_pages(output_dir: Path):
+    """Baut Impressum, Datenschutz und Über-uns Seiten."""
+
+    today = datetime.now().strftime("%d.%m.%Y")
+    year = datetime.now().year
+
+    nav = """<a href="index.html">Startseite</a>
+        <a href="kategorie/wirtschaft.html">Wirtschaft</a>
+        <a href="kategorie/politik.html">Politik</a>
+        <a href="kategorie/gesellschaft.html">Gesellschaft</a>
+        <a href="kategorie/klima.html">Klima</a>
+        <a href="kategorie/sport.html">Sport</a>
+        <a href="kategorie/meinung.html">Meinung</a>"""
+
+    header = f"""<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <div class="topbar">
+    {today} <span class="sep">|</span>
+    <strong>SteuerWende</strong> – Wer zahlt? Wer profitiert? Wer entscheidet?
+  </div>
+  <header class="masthead">
+    <div class="masthead-inner">
+      <a href="index.html" class="site-title">Steuer<span>Wende</span></a>
+      <div class="site-tagline">Unabhängige Analyse · Wirtschaft · Politik · Gesellschaft</div>
+      <nav class="main-nav">{nav}</nav>
+    </div>
+  </header>
+  <div class="thesis-banner">
+    <p>Arbeit wird in Deutschland höher besteuert als fast überall sonst.
+    Vermögen kaum. <strong>Wir fragen, was das für uns alle bedeutet.</strong></p>
+  </div>"""
+
+    footer = f"""  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo">Steuer<span>Wende</span></div>
+        <p>Unabhängiger Journalismus für ein gerechtes Steuersystem.<br/>Keine Werbung. Keine Paywall.</p>
+      </div>
+      <div class="footer-links">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="ueber-uns.html">Über uns</a>
+      </div>
+      <p class="footer-copy">© {year} SteuerWende</p>
+    </div>
+  </footer>
+</body>
+</html>"""
+
+    # ── IMPRESSUM ──
+    impressum = header + """
+  <main class="article-page">
+    <div class="article-header container">
+      <span class="kicker">Rechtliches</span>
+      <h1>Impressum</h1>
+      <p class="deck">Angaben gemäß § 5 TMG</p>
+    </div>
+    <div class="article-body container">
+      <h2>Verantwortlich für den Inhalt</h2>
+      <p>[NAME]<br/>[STRASSE]<br/>[PLZ ORT]<br/>Deutschland</p>
+      <h2>Kontakt</h2>
+      <p>E-Mail: <a href="mailto:redaktion@steuerwende.de">redaktion@steuerwende.de</a></p>
+      <h2>Redaktionell verantwortlich</h2>
+      <p>[NAME]<br/>(Anschrift wie oben)</p>
+      <h2>Journalistisch-redaktionelle Inhalte</h2>
+      <p>SteuerWende ist ein unabhängiges, nicht-kommerzielles Informationsangebot.
+      Die Plattform verfolgt keine wirtschaftlichen Eigeninteressen und nimmt keine
+      Werbung an. Alle Inhalte dienen der sachlichen Information und politischen
+      Meinungsbildung im Sinne des demokratischen Diskurses.</p>
+      <h2>Haftung für Inhalte</h2>
+      <p>Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf
+      diesen Seiten nach den allgemeinen Gesetzen verantwortlich.</p>
+      <h2>Urheberrecht</h2>
+      <p>Die durch die Seitenbetreiber erstellten Inhalte unterliegen dem deutschen
+      Urheberrecht. Downloads und Kopien dieser Seite sind nur für den privaten,
+      nicht kommerziellen Gebrauch gestattet.</p>
+    </div>
+  </main>
+""" + footer
+    (output_dir / "impressum.html").write_text(impressum)
+    print("  ✅ impressum.html")
+
+    # ── DATENSCHUTZ ──
+    datenschutz = header + """
+  <main class="article-page">
+    <div class="article-header container">
+      <span class="kicker">Rechtliches</span>
+      <h1>Datenschutzerklärung</h1>
+      <p class="deck">Gemäß DSGVO und BDSG</p>
+    </div>
+    <div class="article-body container">
+      <p><strong>Kurzfassung:</strong> SteuerWende verwendet kein Tracking,
+      keine Cookies, keine Werbung und keine externen Analysedienste.
+      Wir speichern keine personenbezogenen Daten unserer Leserinnen und Leser.</p>
+      <h2>1. Verantwortlicher</h2>
+      <p>Verantwortlich ist die im <a href="impressum.html">Impressum</a> genannte Person.</p>
+      <h2>2. Hosting</h2>
+      <p>Diese Website wird über GitHub Pages (GitHub Inc., USA) gehostet.
+      GitHub kann beim Abruf technische Zugriffsdaten in Server-Logs speichern.
+      Weitere Infos: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank">GitHub Privacy Statement</a>.</p>
+      <h2>3. Cookies und Tracking</h2>
+      <p>SteuerWende verwendet <strong>keine Cookies</strong> und keine Tracking-Technologien.</p>
+      <h2>4. Externe Schriftarten</h2>
+      <p>Diese Website lädt Schriftarten von Google Fonts. Dabei wird Ihre IP-Adresse
+      an Google übermittelt (Art. 6 Abs. 1 lit. f DSGVO).</p>
+      <h2>5. Ihre Rechte</h2>
+      <p>Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Widerspruch.
+      Kontakt: <a href="mailto:redaktion@steuerwende.de">redaktion@steuerwende.de</a></p>
+    </div>
+  </main>
+""" + footer
+    (output_dir / "datenschutz.html").write_text(datenschutz)
+    print("  ✅ datenschutz.html")
+
+    # ── ÜBER UNS ──
+    ueber_uns = header + """
+  <main class="article-page">
+    <div class="article-header container">
+      <span class="kicker">Über diese Seite</span>
+      <h1>Warum es SteuerWende gibt</h1>
+      <p class="deck">In Deutschland wird besteuert, wer arbeitet. Wer Vermögen
+      besitzt, wird kaum zur Kasse gebeten. Das ist keine Naturgewalt –
+      es ist eine politische Entscheidung. Und sie lässt sich ändern.</p>
+    </div>
+    <div class="article-body container">
+      <p>Ein Arbeitnehmer mit mittlerem Einkommen zahlt fast die Hälfte seines
+      Bruttogehalts an den Staat. Wer hingegen Millionen erbt, ein Immobilienportfolio
+      besitzt oder von Kapitalerträgen lebt, zahlt einen Bruchteil davon.</p>
+      <p>Das ist kein Zufall. Es ist das Ergebnis von Jahrzehnten gezielter
+      Steuerpolitik – beeinflusst von Lobbyverbänden, verteidigt von Parteien,
+      und weitgehend unsichtbar für die meisten Menschen.</p>
+      <blockquote><p>SteuerWende existiert, weil Steuerpolitik zu wichtig ist,
+      um sie Ökonomen und Lobbyisten zu überlassen.</p></blockquote>
+      <p>Diese Plattform schreibt über Wirtschaft, Politik, Klima, Gesellschaft
+      und Sport – aber immer mit demselben Blickwinkel: Wer profitiert von
+      der Art, wie unser Steuersystem aufgebaut ist? Und wer zahlt dafür?</p>
+      <p>SteuerWende stützt sich ausschließlich auf belegbare Daten und
+      wissenschaftliche Quellen – OECD, DIW Berlin, Deutsche Bundesbank,
+      Statistisches Bundesamt sowie die Forschung von Ökonomen wie
+      Thomas Piketty und Gabriel Zucman.</p>
+      <h2>Unsere Grundsätze</h2>
+      <p><strong>Keine Werbung.</strong> SteuerWende nimmt keine Werbung an und ist nicht kommerziell.</p>
+      <p><strong>Keine Paywall.</strong> Alle Inhalte sind kostenlos und frei zugänglich.</p>
+      <p><strong>Nur belegbare Quellen.</strong> Jede Zahl ist mit einer nachprüfbaren Quelle belegt.</p>
+      <p><strong>Kein Tracking.</strong> Keine Cookies, kein Analytics, keine Nutzerverfolgung.</p>
+      <p>Kontakt: <a href="mailto:redaktion@steuerwende.de">redaktion@steuerwende.de</a></p>
+    </div>
+  </main>
+""" + footer
+    (output_dir / "ueber-uns.html").write_text(ueber_uns)
+    print("  ✅ ueber-uns.html")
+
+
 def build_site():
     print("🔨 Baue SteuerWende Website...")
 
@@ -363,6 +523,7 @@ def build_site():
         build_article_page(article, OUTPUT)
 
     build_index(articles, OUTPUT)
+    build_static_pages(OUTPUT)
 
     print(f"✅ Website gebaut: {OUTPUT}")
     print(f"   {len(articles)} Artikel · {len(list(OUTPUT.rglob('*.html')))} HTML-Seiten")
