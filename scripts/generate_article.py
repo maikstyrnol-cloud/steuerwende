@@ -173,15 +173,29 @@ organisch eingebaut sein, nicht als Parole, sondern als logische Schlussfolgerun
     )
 
     raw = message.content[0].text.strip()
+    print(f"API Antwort (erste 200 Zeichen): {raw[:200]}")
 
-    # JSON aus der Antwort extrahieren (falls Model Erklärungstext darum herum schreibt)
-    if raw.startswith("{"):
-        article_json = raw
-    else:
-        start = raw.find("{")
+    # JSON aus der Antwort extrahieren
+    start = raw.find("{")
+    end = raw.rfind("}") + 1
+
+    if start == -1 or end == 0:
+        # Kein JSON gefunden – zweiter Versuch mit expliziterem Prompt
+        print("⚠️  Kein JSON gefunden, versuche erneut...")
+        retry_message = client.messages.create(
+            model="claude-opus-4-6",
+            max_tokens=2000,
+            messages=[
+                {"role": "user", "content": prompt},
+                {"role": "assistant", "content": "{"},
+            ],
+            system=SYSTEM_PROMPT,
+        )
+        raw = "{" + retry_message.content[0].text.strip()
+        start = 0
         end = raw.rfind("}") + 1
-        article_json = raw[start:end]
 
+    article_json = raw[start:end]
     return json.loads(article_json)
 
 
