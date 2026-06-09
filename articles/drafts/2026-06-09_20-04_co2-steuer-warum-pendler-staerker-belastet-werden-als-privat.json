@@ -1,0 +1,88 @@
+{
+  "titel": "CO2-Steuer: Warum Pendler staerker belastet werden als Privatjet-Passagiere",
+  "untertitel": "Die deutsche CO2-Bepreisung trifft einkommensschwache Haushalte ueberproportional – waehrend Luxusemissionen kaum erfasst werden",
+  "kategorie": "Klima",
+  "lesezeit": 6,
+  "inhalt": "<p>Seit 2021 gilt in Deutschland ein CO2-Preis auf fossile Brennstoffe. Zum 1. Januar 2024 stieg er auf 45 Euro pro Tonne, ab 2025 werden es 55 Euro sein. Was als zentrales Instrument der Klimapolitik konzipiert wurde, entpuppt sich bei genauerem Hinsehen als sozial schief verteilte Abgabe: Die CO2-Steuer belastet Haushalte mit niedrigem Einkommen relativ gesehen deutlich staerker als Wohlhabende.</p><p>Das Deutsche Institut fuer Wirtschaftsforschung (DIW) hat berechnet, dass Haushalte im untersten Einkommensfuenftel rund 3,7 Prozent ihres verfuegbaren Einkommens fuer die CO2-Bepreisung aufwenden muessen – inklusive der Weitergabe ueber Heiz- und Spritkosten. Im obersten Fuenftel sind es lediglich 1,4 Prozent. Der Grund ist strukturell: Geringverdienende geben einen groesseren Anteil ihres Einkommens fuer Energie und Mobilitaet aus, haben aeltere Heizungen und sind haeufiger auf das Auto angewiesen, weil der oeffentliche Nahverkehr im laendlichen Raum unzureichend ausgebaut ist.</p><p>Besonders deutlich wird die Schieflage beim Vergleich verschiedener Verkehrstraeger. Ein durchschnittlicher Pendler, der taeglich 40 Kilometer zur Arbeit faehrt, zahlt bei einem Verbrauch von sieben Litern Benzin auf 100 Kilometer rund 320 Euro jaehrlich an CO2-Abgaben. Ein Privatjetflug von Muenchen nach Sylt – rund 800 Kilometer – verursacht laut Atmosfair etwa vier Tonnen CO2. Doch Kerosin fuer die private Luftfahrt ist in Deutschland weitgehend von der CO2-Bepreisung ausgenommen. Zwar greift seit 2012 der europaeische Emissionshandel (EU ETS) fuer innereuropaeische Fluege, doch Privatjets unter bestimmten Schwellenwerten fallen haeufig durch das Raster.</p><p>Laut einer Studie von Transport & Environment aus dem Jahr 2023 stossen die reichsten ein Prozent der europaeischen Bevoelkerung pro Kopf 22-mal mehr CO2 durch Mobilitaet aus als die aermsten 50 Prozent. Gleichzeitig werden gerade emissionsintensive Luxuskonsumformen – Yachten, Privatfluege, SUV-Flotten – steuerlich kaum erfasst oder sogar beguenstigt.</p><p>Das Fehlen eines sozialen Ausgleichsmechanismus verschaerft das Problem. In der Schweiz wird ein Grossteil der CO2-Abgabe als Klimadividende an die Bevoelkerung zurueckverteilt – pro Kopf, unabhaengig vom Einkommen. In Oesterreich gibt es seit 2022 einen regionalen Klimabonus, der Landbewohner staerker entlastet. Deutschland hat bislang lediglich die Fernpendlerpauschale auf 38 Cent ab dem 21. Kilometer angehoben – ein Instrument, das ueberwiegend Besserverdienenden zugutekommt, da es als Werbungskosten den Steuersatz mindert.</p><p>Laut Umweltbundesamt hat die CO2-Bepreisung im Verkehrssektor bisher kaum lenkende Wirkung entfaltet. Die Emissionen im Verkehr lagen 2023 bei 146 Millionen Tonnen CO2-Aequivalent und verfehlten das Sektorziel erneut. Experten des Mercator Research Institute on Global Commons and Climate Change (MCC) fordern daher eine Reform: hoehere CO2-Preise kombiniert mit einer vollstaendigen Pro-Kopf-Rueckerstattung, die einkommensschwache Haushalte netto entlastet.</p><p>Solange die CO2-Steuer Pendler an der Tankstelle trifft, waehrend Kerosin fuer Privatjets steuerlich privilegiert bleibt, bleibt das klimapolitische Instrument ein sozialpolitisches Problem.</p>",
+  "daten_highlight": {
+    "zahl": "3,7%",
+    "beschreibung": "Anteil des verfuegbaren Einkommens, den die aermsten 20 Prozent der Haushalte fuer die CO2-Bepreisung aufwenden – gegenueber 1,4 Prozent bei den reichsten 20 Prozent",
+    "quelle": "DIW Berlin 2023"
+  },
+  "infografik": {
+    "typ": "balken",
+    "titel": "CO2-Steuerbelastung nach Einkommensgruppen",
+    "beschreibung": "Anteil der CO2-Bepreisung am verfuegbaren Haushaltseinkommen in Deutschland nach Einkommensfuenfteln",
+    "quelle": "DIW Berlin 2023",
+    "daten": [
+      {
+        "label": "Unterstes Fuenftel",
+        "wert": 3.7,
+        "farbe": "rot"
+      },
+      {
+        "label": "Zweites Fuenftel",
+        "wert": 2.8,
+        "farbe": "rot"
+      },
+      {
+        "label": "Mittleres Fuenftel",
+        "wert": 2.2,
+        "farbe": "grau"
+      },
+      {
+        "label": "Viertes Fuenftel",
+        "wert": 1.8,
+        "farbe": "blau"
+      },
+      {
+        "label": "Oberstes Fuenftel",
+        "wert": 1.4,
+        "farbe": "blau"
+      }
+    ]
+  },
+  "quellen": [
+    {
+      "autor": "DIW Berlin",
+      "titel": "Verteilungswirkungen der CO2-Bepreisung in Deutschland",
+      "jahr": 2023,
+      "url": "https://www.diw.de/de/diw_01.c.867594.de/publikationen.html"
+    },
+    {
+      "autor": "Transport & Environment",
+      "titel": "Private jets: Can the super-rich pay their fair share?",
+      "jahr": 2023,
+      "url": "https://www.transportenvironment.org/discover/private-jets-can-the-super-rich-pay-their-fair-share/"
+    },
+    {
+      "autor": "Umweltbundesamt",
+      "titel": "Treibhausgasemissionen in Deutschland – Verkehr",
+      "jahr": 2024,
+      "url": "https://www.umweltbundesamt.de/daten/klima/treibhausgas-emissionen-in-deutschland"
+    },
+    {
+      "autor": "MCC Berlin",
+      "titel": "CO2-Preise und sozialer Ausgleich",
+      "jahr": 2023,
+      "url": "https://www.mcc-berlin.net/forschung/co2-preise.html"
+    }
+  ],
+  "seo_beschreibung": "Die CO2-Steuer belastet Geringverdiener und Pendler ueberproportional, waehrend Privatjets steuerlich privilegiert bleiben. Analyse der sozialen Schieflage der deutschen Klimabepreisung mit Zahlen von DIW und Umweltbundesamt.",
+  "tags": [
+    "CO2 Steuer sozial",
+    "Klimasteuer Verteilung",
+    "CO2-Preis Gerechtigkeit",
+    "Pendlerpauschale",
+    "Klimadividende",
+    "Emissionshandel",
+    "Privatjets Steuerprivileg"
+  ],
+  "infografik_svg": "<svg viewBox=\"0 0 500 290\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:520px;display:block;margin:0 auto;\">\n  <text x=\"0\" y=\"22\" font-size=\"14\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">CO2-Steuerbelastung nach Einkommensgruppen</text>\n  \n    <text x=\"132\" y=\"61\" text-anchor=\"end\" font-size=\"13\" fill=\"#4b5563\" font-family=\"sans-serif\">Unterstes Fuenftel</text>\n    <rect x=\"140\" y=\"40\" width=\"280\" height=\"32\" fill=\"#c8102e\" rx=\"2\"/>\n    <text x=\"428\" y=\"61\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">3.7%</text>\n    <text x=\"132\" y=\"107\" text-anchor=\"end\" font-size=\"13\" fill=\"#4b5563\" font-family=\"sans-serif\">Zweites Fuenftel</text>\n    <rect x=\"140\" y=\"86\" width=\"211\" height=\"32\" fill=\"#c8102e\" rx=\"2\"/>\n    <text x=\"359\" y=\"107\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">2.8%</text>\n    <text x=\"132\" y=\"153\" text-anchor=\"end\" font-size=\"13\" fill=\"#4b5563\" font-family=\"sans-serif\">Mittleres Fuenftel</text>\n    <rect x=\"140\" y=\"132\" width=\"166\" height=\"32\" fill=\"#9ca3af\" rx=\"2\"/>\n    <text x=\"314\" y=\"153\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">2.2%</text>\n    <text x=\"132\" y=\"199\" text-anchor=\"end\" font-size=\"13\" fill=\"#4b5563\" font-family=\"sans-serif\">Viertes Fuenftel</text>\n    <rect x=\"140\" y=\"178\" width=\"136\" height=\"32\" fill=\"#2d6a9f\" rx=\"2\"/>\n    <text x=\"284\" y=\"199\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">1.8%</text>\n    <text x=\"132\" y=\"245\" text-anchor=\"end\" font-size=\"13\" fill=\"#4b5563\" font-family=\"sans-serif\">Oberstes Fuenftel</text>\n    <rect x=\"140\" y=\"224\" width=\"105\" height=\"32\" fill=\"#2d6a9f\" rx=\"2\"/>\n    <text x=\"253\" y=\"245\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">1.4%</text>\n  <text x=\"0\" y=\"282\" font-size=\"11\" fill=\"#9ca3af\" font-family=\"sans-serif\">Quelle: DIW Berlin 2023</text>\n</svg>",
+  "_meta": {
+    "erstellt": "2026-06-09T20:04:46.174758",
+    "status": "entwurf",
+    "slug": "co2-steuer-warum-pendler-staerker-belastet-werden-als-privat",
+    "filename": "2026-06-09_20-04_co2-steuer-warum-pendler-staerker-belastet-werden-als-privat.json"
+  }
+}
