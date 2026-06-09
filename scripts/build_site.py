@@ -182,6 +182,7 @@ def build_article_page(article, out):
     </div>
     {dh_html}
     <div class="article-body container">
+      {"<div class='infografik-wrap'>" + article["infografik_svg"] + "</div>" if article.get("infografik_svg") else ""}
       {article.get("inhalt","")}
       <div class="sources-box"><h3>Quellen & Belege</h3><ol>{quellen_html}</ol></div>
     </div>
@@ -312,3 +313,12 @@ def build_site():
 
 if __name__ == "__main__":
     build_site()
+
+# CSS-Ergaenzung fuer Infografiken (wird in main.css benoetigt):
+# .infografik-wrap {
+#   background: white;
+#   border: 1px solid #e8e4da;
+#   border-left: 4px solid #c8102e;
+#   padding: 20px 24px;
+#   margin: 24px 0;
+# }
