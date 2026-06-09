@@ -31,13 +31,14 @@ Antworte NUR mit rohem JSON, kein Markdown:
 }
 
 WICHTIG:
-- Labels maximal 20 Zeichen, klar und verständlich formuliert (z.B. 'Ärmste 20%' statt 'Unterstes Fünftel', 'Reichste 20%' statt 'Oberstes Fünftel', Ländernamen statt Abkürzungen)
-- Werte IMMER als Prozentzahl (z.B. 47.8 für 47.8%) oder als einfache Zahl ohne Einheit
-- KEINE Euros, KEINE Milliarden als Werte - nur Prozentzahlen oder Index-Zahlen
-- Für Prozentwerte: 47.8 (nicht 0.478)
-- Für "typ": "balken" (Vergleiche) oder "donut" (Anteile die 100% ergeben)
-- Für "farbe": "rot" für Deutschland/Hauptwert, "blau" für Vergleich, "grau" für Referenz
-- Maximal 5 Datenpunkte
+- Maximal 4 Datenpunkte - weniger ist mehr
+- Labels maximal 15 Zeichen, so einfach wie möglich
+- Für Einkommensgruppen NUR: "Arm", "Mittel", "Reich" - niemals Fünftel oder Quintile
+- Für Ländervergleiche: Ländernamen ausschreiben
+- Werte als Prozentzahl (47.8 für 47.8%) - KEINE Euros oder Milliarden
+- Farblogik: "rot" für höchsten/problematischsten Wert, "blau" für niedrigsten, "grau" für Mittelwerte
+- Für "typ": "balken" (Vergleiche zwischen Kategorien) oder "donut" (Anteile die 100% ergeben)
+- Wähle den Grafiktyp der die Kernaussage des Artikels am besten zeigt
 - Nur echte, belegbare Zahlen
 
 Artikel:
