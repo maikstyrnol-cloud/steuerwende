@@ -174,8 +174,7 @@ def build_article_page(article, out):
     </div></div>"""
 
     quellen_html = "".join(
-        f'<li>{q.get("autor","")}: <em>{q.get("titel","")}</em> ({q.get("jahr","")}). '
-        f'{"<a href=" + repr(q["url"]) + " target=_blank rel=noopener>" + q["url"] + "</a>" if q.get("url") else ""}</li>'
+        f'<li>{q.get("autor","")}: <em>{q.get("titel","")}</em> ({q.get("jahr","")})</li>'
         for q in article.get("quellen", [])
     )
     tags_html = " ".join(f'<span class="tag">{t}</span>' for t in article.get("tags", []))
