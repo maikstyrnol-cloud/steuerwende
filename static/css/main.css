@@ -264,15 +264,16 @@ footer { background: var(--slate); color: rgba(255,255,255,0.5); padding: 36px 0
 
 /* ── SVG CARD PREVIEW ── */
 .card-svg {
-  background: #f5f2eb;
-  padding: 12px;
+  background: #ffffff;
+  padding: 10px 12px 4px;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: auto !important;
+  min-height: 160px;
+  display: block;
+  border-bottom: 1px solid var(--lightgray);
 }
 .card-svg svg {
   width: 100%;
-  height: 100%;
-  max-height: 148px;
+  height: auto;
+  display: block;
 }
