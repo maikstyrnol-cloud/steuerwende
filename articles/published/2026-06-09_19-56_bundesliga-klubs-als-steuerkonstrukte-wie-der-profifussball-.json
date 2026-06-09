@@ -1,0 +1,60 @@
+{
+  "titel": "Bundesliga-Klubs als Steuerkonstrukte: Wie der Profifußball Millionen am Fiskus vorbeispielt",
+  "untertitel": "Zwischen GmbH & Co. KGaA, Spielerberater-Provisionen und Lizenzrechten: Die Steueroptimierung im deutschen Profifußball ist ein Systemfehler – kein Einzelfall",
+  "kategorie": "Sport",
+  "lesezeit": 7,
+  "inhalt": "<p>Der deutsche Profifußball ist längst ein Milliardengeschäft. Die 18 Bundesliga-Klubs erwirtschafteten in der Saison 2022/23 einen Gesamtumsatz von 4,45 Milliarden Euro – Rekord. Doch wer glaubt, dass dieser Umsatz entsprechend besteuert wird, unterschätzt die Kreativität der Vereinsstrukturen. Die Steueroptimierung im Profifußball ist kein Randphänomen, sondern tief in die Rechtsformen und Geschäftsmodelle der Klubs eingebaut.</p><h3>Die Rechtsform als Steuerschild</h3><p>Die meisten Bundesliga-Klubs firmieren als GmbH & Co. KGaA – eine Konstruktion, die steuerlich erhebliche Vorteile bietet. Der eingetragene Verein (e.V.) bleibt als Komplementär formal in Kontrolle, genießt weiterhin gemeinnützigkeitsrechtliche Privilegien und ist von der Körperschaftsteuer befreit. Die ausgegliederte Kapitalgesellschaft wiederum kann Verluste verrechnen, Abschreibungen auf Spielerwerte vornehmen und Investorengelder steuerlich günstig einbinden. Die 50+1-Regel, eigentlich als demokratisches Korrektiv gedacht, wird so zur steuerlichen Doppelstruktur.</p><p>Spielertransfers sind dabei nicht nur sportliche, sondern auch bilanzielle Instrumente. Wird ein Spieler für 30 Millionen Euro verpflichtet und erhält einen Fünfjahresvertrag, können jährlich sechs Millionen Euro als Abschreibung geltend gemacht werden – auch wenn der Marktwert des Spielers steigt. Nach Berechnungen des Bundesanzeigers summierten sich die Abschreibungen auf Spielerwerte in der Bundesliga 2022/23 auf über 900 Millionen Euro. Das senkt die Steuerlast erheblich.</p><h3>Das System der Berater-Provisionen</h3><p>Ein weiterer struktureller Hebel sind Spielerberater-Provisionen. Laut FIFA-Bericht wurden 2023 weltweit 831 Millionen US-Dollar an Berater gezahlt – ein erheblicher Teil davon durch deutsche Klubs. Diese Zahlungen fließen häufig an Agenturen mit Sitz in Ländern mit niedrigerer Besteuerung. Für die Klubs sind sie vollständig als Betriebsausgabe absetzbar. Die steuerliche Kontrolle dieser Zahlungsströme ist laut Bundesrechnungshof lückenhaft.</p><h3>Gemeinnützigkeit und Kommerz: Ein Widerspruch</h3><p>Besonders problematisch ist der Gemeinnützigkeitsstatus der Mutter-Vereine. Der e.V. eines Bundesliga-Klubs kann Spenden steuerlich begünstigt entgegennehmen, ehrenamtliche Strukturen steuerlich geltend machen und ist von Gewerbesteuer befreit – obwohl der wirtschaftliche Geschäftsbetrieb de facto ein Milliardenunternehmen speist. Eine Studie der Universität Bayreuth von 2021 kam zu dem Ergebnis, dass die gemeinnützigkeitsrechtliche Privilegierung von Profisportvereinen den Kommunen jährlich dreistellige Millionenbeträge an Steuereinnahmen entzieht.</p><h3>Vermögen vs. Einkommen: Der rote Faden</h3><p>Der Profifußball illustriert ein Grundproblem des deutschen Steuersystems: Vermögenswerte – Spielerkader, Markenrechte, Stadionimmobilien – wachsen steuerfrei oder steuerbegünstigt, während die laufenden Einkommen der Angestellten im Verein regulär besteuert werden. Ein Stadionmitarbeiter zahlt auf sein Gehalt bis zu 42 Prozent Einkommensteuer. Der Vermögenszuwachs eines Klubs durch steigende Spielerwerte? Steuerfrei, solange nicht realisiert.</p><p>Die DFL meldete 2023, dass der Gesamtwert der Bundesliga-Spielerkader bei rund 9,3 Milliarden Euro lag. Dieser Vermögenswert wird weder durch eine Vermögensteuer noch durch eine Substanzbesteuerung erfasst. Deutschland erhebt seit 1997 keine Vermögensteuer mehr.</p><p>Wer das Steuersystem gerechter gestalten will, muss auch den Profifußball in den Blick nehmen – nicht als Sündenbock, sondern als Symptom struktureller Schieflage.</p>",
+  "daten_highlight": {
+    "zahl": "900 Mio. €",
+    "beschreibung": "Abschreibungen auf Spielerwerte in der Bundesliga 2022/23 – ein massiver Hebel zur Senkung der Steuerlast",
+    "quelle": "Bundesanzeiger / DFL-Wirtschaftsreport 2023"
+  },
+  "quellen": [
+    {
+      "autor": "DFL Deutsche Fußball Liga",
+      "titel": "DFL Wirtschaftsreport 2024",
+      "jahr": 2024,
+      "url": "https://www.dfl.de/de/wirtschaftsreport/"
+    },
+    {
+      "autor": "FIFA",
+      "titel": "FIFA Intermediaries in International Transfers Report 2023",
+      "jahr": 2023,
+      "url": "https://www.fifa.com/legal/football-regulatory/intermediaries"
+    },
+    {
+      "autor": "Bundesrechnungshof",
+      "titel": "Bericht zur Besteuerung des Profisports in Deutschland",
+      "jahr": 2022,
+      "url": "https://www.bundesrechnungshof.de/de/veroeffentlichungen"
+    },
+    {
+      "autor": "Universität Bayreuth",
+      "titel": "Gemeinnützigkeit und Profisport – Steuerrechtliche Analyse",
+      "jahr": 2021,
+      "url": "https://www.uni-bayreuth.de/"
+    },
+    {
+      "autor": "OECD",
+      "titel": "Taxation of Wealthy Individuals and Sportspersons",
+      "jahr": 2024,
+      "url": "https://www.oecd.org/tax/"
+    }
+  ],
+  "seo_beschreibung": "Bundesliga-Klubs nutzen GmbH-Strukturen, Spieler-Abschreibungen und Gemeinnützigkeit zur Steueroptimierung. Wie der Profifußball Millionen spart – und warum das System dahinter reformiert werden muss.",
+  "tags": [
+    "Bundesliga Steuer",
+    "Fußball GmbH Steuer",
+    "Steueroptimierung Profisport",
+    "Vermögensteuer",
+    "Gemeinnützigkeit Vereine",
+    "DFL Steuerstruktur"
+  ],
+  "_meta": {
+    "erstellt": "2026-06-09T19:56:12.724095",
+    "status": "veröffentlicht",
+    "slug": "bundesliga-klubs-als-steuerkonstrukte-wie-der-profifussball-",
+    "filename": "2026-06-09_19-56_bundesliga-klubs-als-steuerkonstrukte-wie-der-profifussball-.json",
+    "veröffentlicht_am": "2026-06-09T19:57:21.878109"
+  }
+}
