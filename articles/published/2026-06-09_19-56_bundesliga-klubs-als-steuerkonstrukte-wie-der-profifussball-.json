@@ -60,7 +60,7 @@
   "infografik": {
     "typ": "balken",
     "titel": "Rechtsformen der Bundesliga-Klubs",
-    "quelle": "DFL Wirtschaftsreport 2024",
+    "quelle": "DFL Wirtschaftsreport 2023",
     "daten": [
       {
         "label": "GmbH & Co. KGaA",
@@ -68,21 +68,21 @@
         "farbe": "rot"
       },
       {
-        "label": "e.V.",
+        "label": "AG",
+        "wert": 16.7,
+        "farbe": "blau"
+      },
+      {
+        "label": "GmbH",
         "wert": 22.2,
         "farbe": "blau"
       },
       {
-        "label": "AG",
-        "wert": 16.7,
-        "farbe": "grau"
-      },
-      {
-        "label": "GmbH",
+        "label": "e.V. (nicht ausg.)",
         "wert": 16.7,
         "farbe": "grau"
       }
     ]
   },
-  "infografik_svg": "<svg viewBox=\"0 0 535 254\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:560px;display:block;margin:0 auto;\"><text x=\"20\" y=\"24\" font-size=\"14\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">Rechtsformen der Bundesliga-Klubs</text><text x=\"197\" y=\"64\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">GmbH & Co. KGaA</text><rect x=\"205\" y=\"44\" width=\"230\" height=\"30\" fill=\"#c8102e\" rx=\"3\"/><text x=\"443\" y=\"64\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">44.4%</text><text x=\"197\" y=\"110\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">e.V.</text><rect x=\"205\" y=\"90\" width=\"115\" height=\"30\" fill=\"#2d6a9f\" rx=\"3\"/><text x=\"328\" y=\"110\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">22.2%</text><text x=\"197\" y=\"156\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">AG</text><rect x=\"205\" y=\"136\" width=\"86\" height=\"30\" fill=\"#9ca3af\" rx=\"3\"/><text x=\"299\" y=\"156\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">16.7%</text><text x=\"197\" y=\"202\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">GmbH</text><rect x=\"205\" y=\"182\" width=\"86\" height=\"30\" fill=\"#9ca3af\" rx=\"3\"/><text x=\"299\" y=\"202\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">16.7%</text><text x=\"20\" y=\"246\" font-size=\"11\" fill=\"#9ca3af\" font-family=\"sans-serif\">Quelle: DFL Wirtschaftsreport 2024</text></svg>"
+  "infografik_svg": "<svg viewBox=\"0 0 530 262\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:560px;display:block;margin:0 auto;\"><text x=\"20\" y=\"24\" font-size=\"14\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">Rechtsformen der Bundesliga-Klubs</text><text x=\"212\" y=\"64\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">GmbH & Co. KGaA</text><rect x=\"220\" y=\"44\" width=\"210\" height=\"30\" fill=\"#c8102e\" rx=\"3\"/><text x=\"438\" y=\"64\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">44.4%</text><text x=\"212\" y=\"112\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">AG</text><rect x=\"220\" y=\"92\" width=\"78\" height=\"30\" fill=\"#2d6a9f\" rx=\"3\"/><text x=\"306\" y=\"112\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">16.7%</text><text x=\"212\" y=\"160\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">GmbH</text><rect x=\"220\" y=\"140\" width=\"105\" height=\"30\" fill=\"#2d6a9f\" rx=\"3\"/><text x=\"333\" y=\"160\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">22.2%</text><text x=\"212\" y=\"208\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">e.V. (nicht ausg.)</text><rect x=\"220\" y=\"188\" width=\"78\" height=\"30\" fill=\"#9ca3af\" rx=\"3\"/><text x=\"306\" y=\"208\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">16.7%</text><text x=\"20\" y=\"254\" font-size=\"11\" fill=\"#9ca3af\" font-family=\"sans-serif\">Quelle: DFL Wirtschaftsreport 2023</text></svg>"
 }
