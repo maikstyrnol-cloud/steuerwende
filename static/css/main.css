@@ -252,3 +252,12 @@ footer { background: var(--slate); color: rgba(255,255,255,0.5); padding: 36px 0
   .stat-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); padding: 12px 0; }
   nav.main-nav a { padding: 8px 10px; font-size: 11px; }
 }
+
+/* ── INFOGRAFIK ── */
+.infografik-wrap {
+  background: white;
+  border: 1px solid #e8e4da;
+  border-left: 4px solid #c8102e;
+  padding: 20px 24px;
+  margin: 28px 0;
+}
