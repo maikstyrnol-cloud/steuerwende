@@ -82,6 +82,7 @@ def page_wrap(title, content, root="", description=""):
   <meta name="description" content="{description}"/>
   <title>{title} – SteuerWende</title>
   <link rel="stylesheet" href="{root}style.css"/>
+  <link rel="icon" type="image/svg+xml" href="{root}favicon.svg"/>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
@@ -318,6 +319,9 @@ def build_site():
     css_src = ROOT / "static" / "css" / "main.css"
     if css_src.exists():
         shutil.copy(css_src, OUTPUT / "style.css")
+    favicon_src = ROOT / "static" / "favicon.svg"
+    if favicon_src.exists():
+        shutil.copy(favicon_src, OUTPUT / "favicon.svg")
 
     articles = load_articles()
     print(f"  📚 {len(articles)} Artikel")
