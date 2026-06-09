@@ -130,9 +130,9 @@ def main():
     updated = 0
     for f in files:
         article = json.loads(f.read_text())
-        if article.get("infografik_svg"):
-            print(f"  ⏭️  {article.get('titel','')[:50]} – bereits vorhanden")
-            continue
+        # Immer neu generieren um fixes anzuwenden
+        # if article.get("infografik_svg"):
+        #     continue
 
         print(f"  🎨 Generiere Infografik für: {article.get('titel','')[:50]}")
         try:
