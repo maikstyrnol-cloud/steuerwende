@@ -214,7 +214,7 @@ nav.main-nav a:hover { background: var(--slate); color: var(--cream); }
 /* Article body */
 .article-body { padding: 28px 0; }
 .article-body .container { max-width: 100%; padding: 0; }
-.article-body p { font-size: 17px; line-height: 1.75; margin-bottom: 18px; font-family: 'Playfair Display', serif; font-weight: 400; }
+.article-body p { font-size: 17px; line-height: 1.8; margin-bottom: 20px; font-family: 'Source Sans 3', sans-serif; font-weight: 400; }
 .article-body h2 { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: var(--slate); margin: 28px 0 12px; }
 .article-body blockquote { border-left: 3px solid var(--red); padding: 12px 20px; margin: 24px 0; background: var(--white); }
 .article-body blockquote p { font-style: italic; font-size: 18px; margin-bottom: 6px; }
@@ -276,4 +276,19 @@ footer { background: var(--slate); color: rgba(255,255,255,0.5); padding: 36px 0
   width: 100%;
   height: auto;
   display: block;
+}
+
+/* ── HERO SVG ── */
+.hero-svg {
+  background: #ffffff;
+  padding: 16px 20px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.hero-svg svg {
+  width: 100%;
+  height: auto;
+  max-height: 320px;
 }
