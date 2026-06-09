@@ -1,0 +1,48 @@
+name: SteuerWende – Infografiken hinzufügen
+
+on:
+  workflow_dispatch:
+
+jobs:
+  add-infografiken:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Abhängigkeiten installieren
+        run: pip install anthropic
+
+      - name: Infografiken generieren
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/add_infografiken.py
+
+      - name: Website neu bauen
+        run: python scripts/build_site.py
+
+      - name: Änderungen speichern und deployen
+        run: |
+          git config user.name "SteuerWende Bot"
+          git config user.email "bot@steuerwende.de"
+          git add articles/published/
+          git diff --staged --quiet || git commit -m "Infografiken hinzugefügt"
+          git push origin main
+
+      - name: Website deployen
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          publish_branch: gh-pages
