@@ -176,15 +176,8 @@ organisch eingebaut sein, nicht als Parole, sondern als logische Schlussfolgerun
     print(f"API Antwort (erste 200 Zeichen): {raw[:200]}")
 
     # Markdown-Codeblöcke entfernen (```json ... ```)
-    if "```" in raw:
-        parts = raw.split("```")
-        for part in parts:
-            if part.startswith("json"):
-                raw = part[4:].strip()
-                break
-            elif part.strip().startswith("{"):
-                raw = part.strip()
-                break
+    import re
+    raw = re.sub(r"```(?:json)?", "", raw).strip()
 
     # JSON extrahieren
     start = raw.find("{")
