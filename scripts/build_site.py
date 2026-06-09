@@ -105,9 +105,15 @@ def article_card(a, root=""):
     kat = a.get("kategorie","")
     kat_slug = slugify(kat)
     untertitel = a.get("untertitel","")[:120]
+    svg = a.get("infografik_svg","")
+    if svg:
+        # SVG verkleinert als Vorschau einbetten
+        preview = f"<div class="card-img card-svg">{svg}</div>"
+    else:
+        preview = f"<div class="card-img cat-{kat_slug}"></div>"
     return f"""
     <div class="article-card">
-      <div class="card-img cat-{kat_slug}"></div>
+      {preview}
       <div class="card-body">
         <span class="card-kicker">{kat}</span>
         <h3><a href="{root}artikel/{slug}.html">{a.get("titel","")}</a></h3>
