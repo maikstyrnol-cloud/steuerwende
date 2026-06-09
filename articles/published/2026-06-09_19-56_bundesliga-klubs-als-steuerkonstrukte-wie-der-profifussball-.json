@@ -56,5 +56,39 @@
     "slug": "bundesliga-klubs-als-steuerkonstrukte-wie-der-profifussball-",
     "filename": "2026-06-09_19-56_bundesliga-klubs-als-steuerkonstrukte-wie-der-profifussball-.json",
     "veröffentlicht_am": "2026-06-09T19:57:21.878109"
-  }
+  },
+  "infografik": {
+    "typ": "balken",
+    "titel": "Bundesliga-Umsatz vs. geschätzte effektive Steuerlast",
+    "beschreibung": "Die 18 Bundesliga-Klubs erzielten 2022/23 einen Rekordumsatz von 4,45 Mrd. Euro. Durch Rechtsformen wie die GmbH & Co. KGaA und gemeinnützige e.V.-Strukturen bleibt die effektive Steuerbelastung der Muttervereine weit unter dem regulären Körperschaftsteuersatz von 15 Prozent.",
+    "quelle": "DFL Wirtschaftsreport 2024, Bundesanzeiger-Jahresabschlüsse",
+    "daten": [
+      {
+        "label": "Gesamtumsatz Bundesliga 2022/23 (Mrd. €)",
+        "wert": 4.45,
+        "farbe": "gold"
+      },
+      {
+        "label": "Gesamtumsatz 2. Bundesliga 2022/23 (Mrd. €)",
+        "wert": 0.95,
+        "farbe": "blau"
+      },
+      {
+        "label": "Regelkörperschaftsteuersatz (%)",
+        "wert": 15.0,
+        "farbe": "grau"
+      },
+      {
+        "label": "Gewerbesteuer-Hebesatz Ø (%)",
+        "wert": 14.0,
+        "farbe": "grau"
+      },
+      {
+        "label": "Steuersatz e.V. gemeinnützig (%)",
+        "wert": 0.0,
+        "farbe": "rot"
+      }
+    ]
+  },
+  "infografik_svg": "<svg viewBox=\"0 0 490 290\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:520px;display:block;margin:0 auto;\"><text x=\"0\" y=\"22\" font-size=\"14\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">Bundesliga-Umsatz vs. geschätzte effektive Steuerl</text><text x=\"132\" y=\"61\" text-anchor=\"end\" font-size=\"13\" fill=\"#4b5563\" font-family=\"sans-serif\">Gesamtumsatz Bunde</text><rect x=\"140\" y=\"40\" width=\"83\" height=\"32\" fill=\"#f0a500\" rx=\"2\"/><text x=\"231\" y=\"61\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">4.45%</text><text x=\"132\" y=\"107\" text-anchor=\"end\" font-size=\"13\" fill=\"#4b5563\" font-family=\"sans-serif\">Gesamtumsatz 2. Bu</text><rect x=\"140\" y=\"86\" width=\"17\" height=\"32\" fill=\"#2d6a9f\" rx=\"2\"/><text x=\"165\" y=\"107\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">0.95%</text><text x=\"132\" y=\"153\" text-anchor=\"end\" font-size=\"13\" fill=\"#4b5563\" font-family=\"sans-serif\">Regelkörperschafts</text><rect x=\"140\" y=\"132\" width=\"280\" height=\"32\" fill=\"#9ca3af\" rx=\"2\"/><text x=\"428\" y=\"153\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">15.0%</text><text x=\"132\" y=\"199\" text-anchor=\"end\" font-size=\"13\" fill=\"#4b5563\" font-family=\"sans-serif\">Gewerbesteuer-Hebe</text><rect x=\"140\" y=\"178\" width=\"261\" height=\"32\" fill=\"#9ca3af\" rx=\"2\"/><text x=\"409\" y=\"199\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">14.0%</text><text x=\"132\" y=\"245\" text-anchor=\"end\" font-size=\"13\" fill=\"#4b5563\" font-family=\"sans-serif\">Steuersatz e.V. ge</text><rect x=\"140\" y=\"224\" width=\"4\" height=\"32\" fill=\"#c8102e\" rx=\"2\"/><text x=\"152\" y=\"245\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">0.0%</text><text x=\"0\" y=\"282\" font-size=\"11\" fill=\"#9ca3af\" font-family=\"sans-serif\">Quelle: DFL Wirtschaftsreport 2024, Bundesanzeiger-Jahresabschlüsse</text></svg>"
 }
