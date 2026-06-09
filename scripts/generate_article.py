@@ -30,7 +30,9 @@ WICHTIGSTE REGEL: Schreibe NIEMALS über einzelne namentlich genannte Personen. 
 Das JSON muss exakt dieses Format haben:
 {"titel": "...", "untertitel": "...", "kategorie": "...", "lesezeit": 7, "inhalt": "<p>HTML hier</p>", "daten_highlight": {"zahl": "47%", "beschreibung": "...", "quelle": "OECD 2024"}, "quellen": [{"autor": "...", "titel": "...", "jahr": 2024, "url": "https://..."}], "seo_beschreibung": "...", "tags": ["Tag1", "Tag2"]}
 
-Stil: Seriös wie Süddeutsche Zeitung, mit echten belegbaren Zahlen (OECD, DIW, Bundesbank), 600-900 Wörter, Alltagsbeispiele. Das Thema Vermögens- vs. Einkommensteuer als roter Faden."""
+Stil: Seriös wie Süddeutsche Zeitung, mit echten belegbaren Zahlen (OECD, DIW, Bundesbank), Alltagsbeispiele.
+
+LÄNGE: Maximal 600 Wörter im "inhalt"-Feld. Nicht mehr. Lieber kürzer und präzise als lang und ausschweifend. Das Thema Vermögens- vs. Einkommensteuer als roter Faden."""
 
 
 def get_thema(drafts_dir, published_dir):
