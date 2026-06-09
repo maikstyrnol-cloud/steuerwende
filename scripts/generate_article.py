@@ -14,13 +14,13 @@ THEMEN = [
     {"kategorie": "Klima", "thema": "CO2-Steuer und soziale Gerechtigkeit", "winkel": "Die CO2-Steuer trifft Pendler härter als Privatjet-Besitzer", "keywords": ["CO2 Steuer sozial", "Klimasteuer Verteilung"]},
     {"kategorie": "Politik", "thema": "Lobbyismus in der Steuerpolitik", "winkel": "Wie Vermögensverbände seit Jahrzehnten Steuerpolitik mitschreiben", "keywords": ["BDI Steuerpolitik Lobbying", "Steuerreform blockiert"]},
     {"kategorie": "Sport", "thema": "Profifußball und Steueroptimierung", "winkel": "Bundesliga-Klubs als Steuerkonstrukte", "keywords": ["Bundesliga Steuer", "Fußball GmbH Steuer"]},
-    {"kategorie": "Hintergrund", "thema": "Das schwedische Modell", "winkel": "Was Deutschland von Skandinavien lernen kann", "keywords": ["Schweden Vermoegensteuer", "Nordeuropa Steuermodell"]},
+    {"kategorie": "Hintergrund", "thema": "Das schwedische Modell", "winkel": "Was Deutschland von Skandinavien lernen kann", "keywords": ["Schweden Vermögensteuer", "Nordeuropa Steuermodell"]},
     {"kategorie": "Wirtschaft", "thema": "Kapitalertragssteuer im Vergleich", "winkel": "25% auf Kapitalerträge, 45% auf Arbeit: Deutschland bevorzugt Kapital", "keywords": ["Abgeltungssteuer", "Kapitalertragsteuer Reform"]},
     {"kategorie": "Gesellschaft", "thema": "Altersarmut und Vermögenskonzentration", "winkel": "Wer ein Leben lang gearbeitet hat, ist im Alter arm. Wer geerbt hat, nicht.", "keywords": ["Altersarmut Deutschland", "Rentenarmut Vermögen"]},
-    {"kategorie": "Politik", "thema": "EU-Vermögensteuer Initiativen", "winkel": "Globale Milliardärssteuer – wie realistisch ist das?", "keywords": ["Zucman Milliardaerssteuer", "EU Vermoegensteuer"]},
-    {"kategorie": "Hintergrund", "thema": "Geschichte der deutschen Vermögensteuer", "winkel": "Von der Kaiserzeit bis 1997: Wie die Vermögensteuer abgeschafft wurde", "keywords": ["Vermoegensteuer Geschichte", "BVerfG 1995 Urteil"]},
-    {"kategorie": "Wirtschaft", "thema": "Vermögenszuwachs in Krisenzeiten", "winkel": "Während Krisen Jobs vernichten, wächst das Vermögen der Reichsten", "keywords": ["Corona Vermoegen", "Pandemie Ungleichheit Deutschland"]},
-    {"kategorie": "Gesellschaft", "thema": "Pflege und Steuergerechtigkeit", "winkel": "Pflegekräfte gehören zu den meistbesteuerten Berufsgruppen", "keywords": ["Pflegesteuer", "Sozialbeitraege Pflege"]},
+    {"kategorie": "Politik", "thema": "EU-Vermögensteuer Initiativen", "winkel": "Globale Milliardärssteuer – wie realistisch ist das?", "keywords": ["Zucman Milliardärssteuer", "EU Vermögensteuer"]},
+    {"kategorie": "Hintergrund", "thema": "Geschichte der deutschen Vermögensteuer", "winkel": "Von der Kaiserzeit bis 1997: Wie die Vermögensteuer abgeschafft wurde", "keywords": ["Vermögensteuer Geschichte", "BVerfG 1995 Urteil"]},
+    {"kategorie": "Wirtschaft", "thema": "Vermögenszuwachs in Krisenzeiten", "winkel": "Während Krisen Jobs vernichten, wächst das Vermögen der Reichsten", "keywords": ["Corona Vermögen", "Pandemie Ungleichheit Deutschland"]},
+    {"kategorie": "Gesellschaft", "thema": "Pflege und Steuergerechtigkeit", "winkel": "Pflegekräfte gehören zu den meistbesteuerten Berufsgruppen", "keywords": ["Pflegesteuer", "Sozialbeiträge Pflege"]},
 ]
 
 SYSTEM_PROMPT = """Du bist Redakteur bei SteuerWende. Antworte NUR mit rohem JSON, ohne Markdown, ohne Codeblöcke, ohne Erklärungen.
@@ -33,7 +33,7 @@ Das JSON muss exakt dieses Format haben – mit einem "infografik" Feld:
   "untertitel": "...",
   "kategorie": "...",
   "lesezeit": 6,
-  "inhalt": "<p>HTML Artikeltext hier. Maximal 500 Woerter.</p>",
+  "inhalt": "<p>HTML Artikeltext hier. Maximal 500 Wörter.</p>",
   "daten_highlight": {"zahl": "47%", "beschreibung": "...", "quelle": "OECD 2024"},
   "infografik": {
     "typ": "balken",
@@ -51,11 +51,11 @@ Das JSON muss exakt dieses Format haben – mit einem "infografik" Feld:
   "tags": ["Tag1", "Tag2"]
 }
 
-Fuer "typ" waehle: "balken" (Vergleiche), "donut" (Anteile/Prozente), oder "zeitstrahl" (Entwicklung ueber Zeit).
-Fuer "farbe" bei balken: "rot" fuer Deutschland/Hauptwert, "blau" fuer Vergleichswerte, "grau" fuer Nebenwerte.
+Für "typ" wähle: "balken" (Vergleiche), "donut" (Anteile/Prozente), oder "zeitstrahl" (Entwicklung ueber Zeit).
+Für "farbe" bei balken: "rot" fuer Deutschland/Hauptwert, "blau" fuer Vergleichswerte, "grau" fuer Nebenwerte.
 Maximal 6 Datenpunkte. Nur echte, belegbare Zahlen verwenden.
 
-Stil: Serioes wie Sueddeutsche Zeitung, echte Quellen (OECD, DIW, Bundesbank), max 500 Woerter Artikeltext."""
+Stil: Seriös wie Süddeutsche Zeitung, echte Quellen (OECD, DIW, Bundesbank), max 500 Wörter Artikeltext."""
 
 
 def get_thema(drafts_dir, published_dir):
@@ -79,7 +79,7 @@ Winkel: {thema['winkel']}
 Keywords: {', '.join(thema['keywords'])}
 
 Generiere auch eine passende Infografik mit echten Zahlen zum Thema.
-WICHTIG: Nur rohes JSON, kein Markdown, keine Erklaerungen."""
+WICHTIG: Nur rohes JSON, kein Markdown, keine Erklärungen."""
 
     message = client.messages.create(
         model="claude-opus-4-6",
