@@ -9,39 +9,6 @@
     "beschreibung": "Anteil des verfügbaren Einkommens, den die ärmsten 20 Prozent der Haushalte für die CO2-Bepreisung aufwenden – gegenüber 1,4 Prozent bei den reichsten 20 Prozent",
     "quelle": "DIW Berlin 2023"
   },
-  "infografik": {
-    "typ": "balken",
-    "titel": "CO2-Steuerbelastung nach Einkommensgruppen",
-    "beschreibung": "Anteil der CO2-Bepreisung am verfügbaren Haushaltseinkommen in Deutschland nach Einkommensfünfteln",
-    "quelle": "DIW Berlin 2023",
-    "daten": [
-      {
-        "label": "Unterstes Fünftel",
-        "wert": 3.7,
-        "farbe": "rot"
-      },
-      {
-        "label": "Zweites Fünftel",
-        "wert": 2.8,
-        "farbe": "rot"
-      },
-      {
-        "label": "Mittleres Fünftel",
-        "wert": 2.2,
-        "farbe": "grau"
-      },
-      {
-        "label": "Viertes Fünftel",
-        "wert": 1.8,
-        "farbe": "blau"
-      },
-      {
-        "label": "Oberstes Fünftel",
-        "wert": 1.4,
-        "farbe": "blau"
-      }
-    ]
-  },
   "quellen": [
     {
       "autor": "DIW Berlin",
@@ -78,12 +45,44 @@
     "Emissionshandel",
     "Privatjets Steuerprivileg"
   ],
-  "infografik_svg": "<svg viewBox=\"0 0 500 290\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:520px;display:block;margin:0 auto;\">\n  <text x=\"0\" y=\"22\" font-size=\"14\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">CO2-Steuerbelastung nach Einkommensgruppen</text>\n  \n    <text x=\"132\" y=\"61\" text-anchor=\"end\" font-size=\"13\" fill=\"#4b5563\" font-family=\"sans-serif\">Unterstes Fünftel</text>\n    <rect x=\"140\" y=\"40\" width=\"280\" height=\"32\" fill=\"#c8102e\" rx=\"2\"/>\n    <text x=\"428\" y=\"61\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">3.7%</text>\n    <text x=\"132\" y=\"107\" text-anchor=\"end\" font-size=\"13\" fill=\"#4b5563\" font-family=\"sans-serif\">Zweites Fünftel</text>\n    <rect x=\"140\" y=\"86\" width=\"211\" height=\"32\" fill=\"#c8102e\" rx=\"2\"/>\n    <text x=\"359\" y=\"107\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">2.8%</text>\n    <text x=\"132\" y=\"153\" text-anchor=\"end\" font-size=\"13\" fill=\"#4b5563\" font-family=\"sans-serif\">Mittleres Fünftel</text>\n    <rect x=\"140\" y=\"132\" width=\"166\" height=\"32\" fill=\"#9ca3af\" rx=\"2\"/>\n    <text x=\"314\" y=\"153\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">2.2%</text>\n    <text x=\"132\" y=\"199\" text-anchor=\"end\" font-size=\"13\" fill=\"#4b5563\" font-family=\"sans-serif\">Viertes Fünftel</text>\n    <rect x=\"140\" y=\"178\" width=\"136\" height=\"32\" fill=\"#2d6a9f\" rx=\"2\"/>\n    <text x=\"284\" y=\"199\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">1.8%</text>\n    <text x=\"132\" y=\"245\" text-anchor=\"end\" font-size=\"13\" fill=\"#4b5563\" font-family=\"sans-serif\">Oberstes Fünftel</text>\n    <rect x=\"140\" y=\"224\" width=\"105\" height=\"32\" fill=\"#2d6a9f\" rx=\"2\"/>\n    <text x=\"253\" y=\"245\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">1.4%</text>\n  <text x=\"0\" y=\"282\" font-size=\"11\" fill=\"#9ca3af\" font-family=\"sans-serif\">Quelle: DIW Berlin 2023</text>\n</svg>",
   "_meta": {
     "erstellt": "2026-06-09T20:04:46.174758",
     "status": "veröffentlicht",
     "slug": "co2-steuer-warum-pendler-stärker-belastet-werden-als-privat",
     "filename": "2026-06-09_20-04_co2-steuer-warum-pendler-stärker-belastet-werden-als-privat.json",
     "veröffentlicht_am": "2026-06-09T20:08:26.826653"
-  }
+  },
+  "infografik": {
+    "typ": "balken",
+    "titel": "CO2-Steuer: Belastung nach Einkommen",
+    "quelle": "DIW Berlin 2024",
+    "daten": [
+      {
+        "label": "Unterstes Fünftel",
+        "wert": 3.7,
+        "farbe": "rot"
+      },
+      {
+        "label": "2. Fünftel",
+        "wert": 2.8,
+        "farbe": "rot"
+      },
+      {
+        "label": "Mittleres Fünftel",
+        "wert": 2.2,
+        "farbe": "grau"
+      },
+      {
+        "label": "4. Fünftel",
+        "wert": 1.8,
+        "farbe": "blau"
+      },
+      {
+        "label": "Oberstes Fünftel",
+        "wert": 1.4,
+        "farbe": "blau"
+      }
+    ]
+  },
+  "infografik_svg": "<svg viewBox=\"0 0 535 300\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:560px;display:block;margin:0 auto;\"><text x=\"20\" y=\"24\" font-size=\"14\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">CO2-Steuer: Belastung nach Einkommen</text><text x=\"197\" y=\"64\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Unterstes Fünftel</text><rect x=\"205\" y=\"44\" width=\"230\" height=\"30\" fill=\"#c8102e\" rx=\"3\"/><text x=\"443\" y=\"64\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">3.7%</text><text x=\"197\" y=\"110\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">2. Fünftel</text><rect x=\"205\" y=\"90\" width=\"174\" height=\"30\" fill=\"#c8102e\" rx=\"3\"/><text x=\"387\" y=\"110\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">2.8%</text><text x=\"197\" y=\"156\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Mittleres Fünftel</text><rect x=\"205\" y=\"136\" width=\"136\" height=\"30\" fill=\"#9ca3af\" rx=\"3\"/><text x=\"349\" y=\"156\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">2.2%</text><text x=\"197\" y=\"202\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">4. Fünftel</text><rect x=\"205\" y=\"182\" width=\"111\" height=\"30\" fill=\"#2d6a9f\" rx=\"3\"/><text x=\"324\" y=\"202\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">1.8%</text><text x=\"197\" y=\"248\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Oberstes Fünftel</text><rect x=\"205\" y=\"228\" width=\"87\" height=\"30\" fill=\"#2d6a9f\" rx=\"3\"/><text x=\"300\" y=\"248\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">1.4%</text><text x=\"20\" y=\"292\" font-size=\"11\" fill=\"#9ca3af\" font-family=\"sans-serif\">Quelle: DIW Berlin 2024</text></svg>"
 }

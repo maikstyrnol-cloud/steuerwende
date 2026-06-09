@@ -61,9 +61,8 @@
   },
   "infografik": {
     "typ": "balken",
-    "titel": "Kaltmieten im Großstadtvergleich (80 m², 2024)",
-    "beschreibung": "Durchschnittliche monatliche Kaltmiete für eine 80-Quadratmeter-Wohnung in deutschen Großstädten laut Immobilienmarktberichten",
-    "quelle": "ImmoScout24 / Immowelt Mietpreisspiegel 2024",
+    "titel": "Kaltmiete 80m² im Vergleich (€/Monat)",
+    "quelle": "Immobilienverband Deutschland (IVD) 2024",
     "daten": [
       {
         "label": "München",
@@ -73,24 +72,14 @@
       {
         "label": "Hamburg",
         "wert": 1200,
-        "farbe": "rot"
+        "farbe": "blau"
       },
       {
         "label": "Berlin",
         "wert": 1100,
-        "farbe": "rot"
-      },
-      {
-        "label": "Köln",
-        "wert": 960,
-        "farbe": "grau"
-      },
-      {
-        "label": "Leipzig",
-        "wert": 560,
         "farbe": "blau"
       }
     ]
   },
-  "infografik_svg": "<svg viewBox=\"0 0 490 290\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:520px;display:block;margin:0 auto;\"><text x=\"0\" y=\"22\" font-size=\"14\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">Kaltmieten im Großstadtvergleich (80 m², 2024)</text><text x=\"132\" y=\"61\" text-anchor=\"end\" font-size=\"13\" fill=\"#4b5563\" font-family=\"sans-serif\">München</text><rect x=\"140\" y=\"40\" width=\"280\" height=\"32\" fill=\"#c8102e\" rx=\"2\"/><text x=\"428\" y=\"61\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">1600 Mrd.</text><text x=\"132\" y=\"107\" text-anchor=\"end\" font-size=\"13\" fill=\"#4b5563\" font-family=\"sans-serif\">Hamburg</text><rect x=\"140\" y=\"86\" width=\"210\" height=\"32\" fill=\"#c8102e\" rx=\"2\"/><text x=\"358\" y=\"107\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">1200 Mrd.</text><text x=\"132\" y=\"153\" text-anchor=\"end\" font-size=\"13\" fill=\"#4b5563\" font-family=\"sans-serif\">Berlin</text><rect x=\"140\" y=\"132\" width=\"192\" height=\"32\" fill=\"#c8102e\" rx=\"2\"/><text x=\"340\" y=\"153\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">1100 Mrd.</text><text x=\"132\" y=\"199\" text-anchor=\"end\" font-size=\"13\" fill=\"#4b5563\" font-family=\"sans-serif\">Köln</text><rect x=\"140\" y=\"178\" width=\"168\" height=\"32\" fill=\"#9ca3af\" rx=\"2\"/><text x=\"316\" y=\"199\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">960 Mrd.</text><text x=\"132\" y=\"245\" text-anchor=\"end\" font-size=\"13\" fill=\"#4b5563\" font-family=\"sans-serif\">Leipzig</text><rect x=\"140\" y=\"224\" width=\"98\" height=\"32\" fill=\"#2d6a9f\" rx=\"2\"/><text x=\"246\" y=\"245\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">560 Mrd.</text><text x=\"0\" y=\"282\" font-size=\"11\" fill=\"#9ca3af\" font-family=\"sans-serif\">Quelle: ImmoScout24 / Immowelt Mietpreisspiegel 2024</text></svg>"
+  "infografik_svg": "<svg viewBox=\"0 0 535 208\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:560px;display:block;margin:0 auto;\"><text x=\"20\" y=\"24\" font-size=\"14\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">Kaltmiete 80m² im Vergleich (€/Monat)</text><text x=\"197\" y=\"64\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">München</text><rect x=\"205\" y=\"44\" width=\"230\" height=\"30\" fill=\"#c8102e\" rx=\"3\"/><text x=\"443\" y=\"64\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">1600 Mrd.</text><text x=\"197\" y=\"110\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Hamburg</text><rect x=\"205\" y=\"90\" width=\"172\" height=\"30\" fill=\"#2d6a9f\" rx=\"3\"/><text x=\"385\" y=\"110\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">1200 Mrd.</text><text x=\"197\" y=\"156\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Berlin</text><rect x=\"205\" y=\"136\" width=\"158\" height=\"30\" fill=\"#2d6a9f\" rx=\"3\"/><text x=\"371\" y=\"156\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">1100 Mrd.</text><text x=\"20\" y=\"200\" font-size=\"11\" fill=\"#9ca3af\" font-family=\"sans-serif\">Quelle: Immobilienverband Deutschland (IVD) 2024</text></svg>"
 }
