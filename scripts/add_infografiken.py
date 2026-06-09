@@ -53,9 +53,9 @@ def build_svg_balken(info):
     if max_wert == 0:
         max_wert = 1
     bar_h = 30
-    gap = 16
-    label_w = 185
-    bar_max_w = 230
+    gap = 18
+    label_w = 200
+    bar_max_w = 210
     pad = 20
     total_w = pad + label_w + bar_max_w + 80 + pad
     total_h = len(daten) * (bar_h + gap) + 70
