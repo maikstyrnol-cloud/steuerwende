@@ -407,11 +407,11 @@ def build_static_pages(output_dir: Path):
     </div>
     <div class="article-body container">
       <h2>Verantwortlich für den Inhalt</h2>
-      <p>[NAME]<br/>[STRASSE]<br/>[PLZ ORT]<br/>Deutschland</p>
+      <p>[Maik Styrnol]<br/>[Blumenstr. 13]<br/>[79194 Gundelfingen]<br/>Deutschland</p>
       <h2>Kontakt</h2>
       <p>E-Mail: <a href="mailto:redaktion@steuerwende.de">redaktion@steuerwende.de</a></p>
       <h2>Redaktionell verantwortlich</h2>
-      <p>[NAME]<br/>(Anschrift wie oben)</p>
+      <p>[Maik Styrnol]<br/>(Anschrift wie oben)</p>
       <h2>Journalistisch-redaktionelle Inhalte</h2>
       <p>SteuerWende ist ein unabhängiges, nicht-kommerzielles Informationsangebot.
       Die Plattform verfolgt keine wirtschaftlichen Eigeninteressen und nimmt keine
