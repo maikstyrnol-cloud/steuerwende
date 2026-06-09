@@ -108,9 +108,9 @@ def article_card(a, root=""):
     svg = a.get("infografik_svg","")
     if svg:
         # SVG verkleinert als Vorschau einbetten
-        preview = f"<div class="card-img card-svg">{svg}</div>"
+        preview = '<div class="card-img card-svg">' + svg + '</div>'
     else:
-        preview = f"<div class="card-img cat-{kat_slug}"></div>"
+        preview = '<div class="card-img cat-' + kat_slug + '"></div>'
     return f"""
     <div class="article-card">
       {preview}
