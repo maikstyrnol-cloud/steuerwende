@@ -34,6 +34,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
           publish_branch: gh-pages
+          cname: steuerwende.de
           commit_message: "Artikel veröffentlicht"
 
       - name: Änderungen in main speichern
