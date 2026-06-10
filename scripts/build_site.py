@@ -60,7 +60,7 @@ def footer_html(root=""):
     <div class="footer-inner">
       <div class="footer-brand">
         <div class="logo">Steuer<span>Wende</span></div>
-        <p>Unabhängiger Journalismus für ein gerechtes Steuersystem.<br/>Keine Werbung. Keine Paywall.</p>
+        <p>Unabhängige Recherche- und Analyseplattform für Steuergerechtigkeit.<br/>Keine Werbung. Keine Paywall.</p>
       </div>
       <div class="footer-links">
         <a href="{root}impressum.html">Impressum</a>
@@ -158,7 +158,7 @@ def build_index(articles, out):
     <div class="article-grid">{cards}</div>
   </div></section>"""
 
-    (out / "index.html").write_text(page_wrap("Startseite", content, "", "SteuerWende – Unabhängiger Journalismus für ein gerechtes Steuersystem"))
+    (out / "index.html").write_text(page_wrap("Startseite", content, "", "SteuerWende – Unabhängige Recherche- und Analyseplattform für Steuergerechtigkeit"))
     print("  ✅ index.html")
 
 def build_article_page(article, out):
@@ -233,7 +233,7 @@ def build_static_pages(out):
       <p>E-Mail: <a href="mailto:redaktion@steuerwende.de">redaktion@steuerwende.de</a></p>
       <h2>Redaktionell verantwortlich</h2>
       <p>Maik Styrnol<br/>Blumenstr. 13, 79194 Gundelfingen</p>
-      <h2>Journalistisch-redaktionelle Inhalte</h2>
+      <h2>Redaktionelle Inhalte</h2>
       <p>SteuerWende ist ein unabhängiges, nicht-kommerzielles Informationsangebot.
       Die Plattform verfolgt keine wirtschaftlichen Eigeninteressen und nimmt keine
       Werbung an. Alle Inhalte dienen der sachlichen Information und politischen
