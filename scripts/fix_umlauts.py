@@ -125,6 +125,29 @@ FIXES = {
     "europaeischen": "europäischen",
     "innereuropaeische": "innereuropäische",
 
+    # Aus Screenshots identifiziert
+    "stossen": "stoßen", "Stossen": "Stoßen",
+    "gestossen": "gestoßen",
+    "Bevoelkerung": "Bevölkerung", "bevoelkerung": "bevölkerung",
+    "Oesterreich": "Österreich", "oesterreich": "österreich",
+    "Muenchen": "München", "muenchen": "münchen",
+    "Fluege": "Flüge", "fluege": "flüge",
+    "Privatfluege": "Privatflüge",
+    "innereuropaeische": "innereuropäische",
+    "europaeische": "europäische", "Europaeische": "Europäische",
+    "europaeischen": "europäischen",
+    "beguenstigt": "begünstigt", "Beguenstigt": "Begünstigt",
+    "verschaerft": "verschärft", "Verschaerft": "Verschärft",
+    "Grossteil": "Großteil", "grossteil": "großteil",
+    "unabhaengig": "unabhängig", "Unabhaengig": "Unabhängig",
+    "zurueckverteilt": "zurückverteilt",
+    "Klimadividende": "Klimadividende",  # korrekt
+    "Landbewohner": "Landbewohner",  # korrekt
+    "ueberwiegend": "überwiegend", "Ueberwiegend": "Überwiegend",
+    "Besserverdienenden": "Besserverdienenden",  # korrekt
+    "Steuersatz": "Steuersatz",  # korrekt
+    "Werbungskosten": "Werbungskosten",  # korrekt
+
     # Steuer-spezifisch
     "Steuersaetze": "Steuersätze", "steuersaetze": "steuersätze",
     "Steuersatz": "Steuersatz",  # korrekt
