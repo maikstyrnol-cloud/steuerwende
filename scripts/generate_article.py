@@ -9,18 +9,69 @@ from datetime import datetime
 from pathlib import Path
 
 THEMEN = [
+    # ── DEUTSCHLAND: KLASSISCHE STEUERTHEMEN ──
     {"kategorie": "Wirtschaft", "thema": "Erbschaftsteuer und Unternehmensübertragung", "winkel": "Warum Milliardenerben fast keine Steuern zahlen", "keywords": ["Erbschaftsteuer Deutschland", "Betriebsvermögen Steuerbefreiung"]},
     {"kategorie": "Gesellschaft", "thema": "Wohnungskrise und Immobilienvermögen", "winkel": "Während Mieten explodieren, wächst Immobilienvermögen steuerfrei", "keywords": ["Immobiliensteuer Deutschland", "Grundsteuer Reform"]},
     {"kategorie": "Klima", "thema": "CO2-Steuer und soziale Gerechtigkeit", "winkel": "Die CO2-Steuer trifft Pendler härter als Privatjet-Besitzer", "keywords": ["CO2 Steuer sozial", "Klimasteuer Verteilung"]},
     {"kategorie": "Politik", "thema": "Lobbyismus in der Steuerpolitik", "winkel": "Wie Vermögensverbände seit Jahrzehnten Steuerpolitik mitschreiben", "keywords": ["BDI Steuerpolitik Lobbying", "Steuerreform blockiert"]},
     {"kategorie": "Sport", "thema": "Profifußball und Steueroptimierung", "winkel": "Bundesliga-Klubs als Steuerkonstrukte", "keywords": ["Bundesliga Steuer", "Fußball GmbH Steuer"]},
-    {"kategorie": "Hintergrund", "thema": "Das schwedische Modell", "winkel": "Was Deutschland von Skandinavien lernen kann", "keywords": ["Schweden Vermögensteuer", "Nordeuropa Steuermodell"]},
+    {"kategorie": "Hintergrund", "thema": "Das schwedische Modell", "winkel": "Was Deutschland von Skandinavien lernen kann", "keywords": ["Schweden Vermögenssteuer", "Nordeuropa Steuermodell"]},
     {"kategorie": "Wirtschaft", "thema": "Kapitalertragssteuer im Vergleich", "winkel": "25% auf Kapitalerträge, 45% auf Arbeit: Deutschland bevorzugt Kapital", "keywords": ["Abgeltungssteuer", "Kapitalertragsteuer Reform"]},
     {"kategorie": "Gesellschaft", "thema": "Altersarmut und Vermögenskonzentration", "winkel": "Wer ein Leben lang gearbeitet hat, ist im Alter arm. Wer geerbt hat, nicht.", "keywords": ["Altersarmut Deutschland", "Rentenarmut Vermögen"]},
     {"kategorie": "Politik", "thema": "EU-Vermögensteuer Initiativen", "winkel": "Globale Milliardärssteuer – wie realistisch ist das?", "keywords": ["Zucman Milliardärssteuer", "EU Vermögensteuer"]},
     {"kategorie": "Hintergrund", "thema": "Geschichte der deutschen Vermögensteuer", "winkel": "Von der Kaiserzeit bis 1997: Wie die Vermögensteuer abgeschafft wurde", "keywords": ["Vermögensteuer Geschichte", "BVerfG 1995 Urteil"]},
     {"kategorie": "Wirtschaft", "thema": "Vermögenszuwachs in Krisenzeiten", "winkel": "Während Krisen Jobs vernichten, wächst das Vermögen der Reichsten", "keywords": ["Corona Vermögen", "Pandemie Ungleichheit Deutschland"]},
     {"kategorie": "Gesellschaft", "thema": "Pflege und Steuergerechtigkeit", "winkel": "Pflegekräfte gehören zu den meistbesteuerten Berufsgruppen", "keywords": ["Pflegesteuer", "Sozialbeiträge Pflege"]},
+
+    # ── GLOBALE GERECHTIGKEIT ──
+    {"kategorie": "Hintergrund", "thema": "Steueroasen und globaler Süden", "winkel": "Konzerne verschieben Gewinne aus Entwicklungsländern – Oxfam schätzt 100 Mrd. Dollar jährlich allein aus Afrika", "keywords": ["Steueroasen Afrika", "Gewinnverschiebung Entwicklungsländer", "Oxfam Steuern"]},
+    {"kategorie": "Politik", "thema": "IWF, Sparmaßnahmen und Steuerpolitik", "winkel": "Warum der IWF ärmeren Ländern Sparmaßnahmen aufzwingt während reiche Länder Vermögen schützen", "keywords": ["IWF Strukturanpassung", "Sparmaßnahmen globaler Süden", "Steuerpolitik Entwicklung"]},
+    {"kategorie": "Wirtschaft", "thema": "Die Kakao-Bäuerin und der Konzern", "winkel": "Produzenten im globalen Süden zahlen effektiv mehr als die Konzerne die ihre Rohstoffe verarbeiten", "keywords": ["Lieferketten Steuern", "Kakao Ghana Steuern", "Konzernsteuern Entwicklung"]},
+    {"kategorie": "Hintergrund", "thema": "Globale Mindeststeuer – was bisher geschah", "winkel": "Die globale Mindeststeuer von 15% klingt nach Durchbruch – ist aber voller Schlupflöcher", "keywords": ["OECD Mindeststeuer", "Pillar Two", "globale Unternehmenssteuer"]},
+    {"kategorie": "Politik", "thema": "Steuerwettbewerb zwischen Staaten", "winkel": "Wenn Länder sich gegenseitig mit Niedrigsteuern unterbieten, verlieren alle außer den Großkonzernen", "keywords": ["Steuerwettbewerb Europa", "Race to the Bottom Steuern", "EU Steuerpolitik"]},
+    {"kategorie": "Gesellschaft", "thema": "Panama Papers und Pandora Papers", "winkel": "Was die größten Datenlecks der Geschichte über legale Steuervermeidung verraten", "keywords": ["Panama Papers Deutschland", "Pandora Papers", "Offshore Vermögen"]},
+
+    # ── NATUR UND RESSOURCEN ──
+    {"kategorie": "Klima", "thema": "Ressourcensteuer statt Einkommensteuer", "winkel": "Warum wir Arbeit besteuern statt Naturverbrauch – und warum das ökologisch absurd ist", "keywords": ["Ressourcensteuer", "ökologische Steuerreform", "Naturverbrauch Steuern"]},
+    {"kategorie": "Klima", "thema": "Land Value Tax – Bodenspekulation besteuern", "winkel": "Henry Georges Idee könnte Wohnungskrise und Steuergerechtigkeit auf einmal lösen", "keywords": ["Land Value Tax", "Bodensteuer", "Henry George"]},
+    {"kategorie": "Klima", "thema": "Privatjets, Yachten und Steuerprivilegien", "winkel": "Die emissionsintensivsten Konsumformen der Superreichen werden steuerlich begünstigt", "keywords": ["Privatjet Steuer", "Yacht Steuer", "Luxusemissionen"]},
+    {"kategorie": "Klima", "thema": "Agrarindustrie und Bodeneigentum", "winkel": "Wenige Großgrundbesitzer kontrollieren immer mehr Agrarfläche – steuerfrei wachsend", "keywords": ["Agrarfläche Eigentum", "Großgrundbesitz Steuer", "Bodenkonzentration Deutschland"]},
+    {"kategorie": "Hintergrund", "thema": "Warum Boden anders ist als anderes Vermögen", "winkel": "Boden kann nicht produziert werden – wer ihn besitzt, profitiert von gesellschaftlichem Wachstum ohne eigene Leistung", "keywords": ["Bodenrente", "Grundeigentum Steuern", "Boden Wirtschaft"]},
+    {"kategorie": "Klima", "thema": "Klimaschäden und wer zahlt", "winkel": "Die Länder die am meisten unter dem Klimawandel leiden haben am wenigsten zu ihm beigetragen – und tragen die Kosten trotzdem", "keywords": ["Klimaschäden Finanzierung", "Loss and Damage", "Klimagerechtigkeit Steuern"]},
+
+    # ── VERSTECKTE UND SYSTEMISCHE THEMEN ──
+    {"kategorie": "Hintergrund", "thema": "Zentralbankpolitik und Vermögensungleichheit", "winkel": "Wie Niedrigzinsen und Quantitative Easing systematisch Vermögende gegenüber Arbeitnehmern bevorzugen", "keywords": ["EZB Geldpolitik Ungleichheit", "Quantitative Easing Vermögen", "Niedrigzinsen Reiche"]},
+    {"kategorie": "Wirtschaft", "thema": "Daten als unbesteuertes Vermögen", "winkel": "Facebook und Google akkumulieren Milliardenvermögen aus unseren Daten – ohne Substanzsteuer", "keywords": ["Digitalsteuer", "Daten Vermögen Steuer", "Tech Konzerne Steuern"]},
+    {"kategorie": "Wirtschaft", "thema": "Patente als Vermögensakkumulation", "winkel": "Wie Patentrecht stille Renten für Vermögende erzeugt – auf Kosten von Innovation und Allgemeinheit", "keywords": ["Patentrecht Steuer", "geistiges Eigentum Rente", "Urheberrecht Vermögen"]},
+    {"kategorie": "Gesellschaft", "thema": "Intergenerationelle Ungerechtigkeit", "winkel": "Heutige Vermögende profitieren von Infrastruktur die vergangene Generationen gebaut haben – ohne dafür zu zahlen", "keywords": ["Generationengerechtigkeit Steuern", "Infrastruktur Finanzierung", "Erbschaft Gesellschaft"]},
+    {"kategorie": "Hintergrund", "thema": "Die Privatisierung öffentlicher Güter", "winkel": "Wenn Wasser, Energie und Gesundheit in private Hände übergehen, fließen Gewinne steuerbegünstigt ab", "keywords": ["Privatisierung Steuern", "öffentliche Güter", "PPP Steuer"]},
+    {"kategorie": "Politik", "thema": "Wie Steuergesetze wirklich geschrieben werden", "winkel": "Lobbyisten sitzen buchstäblich mit am Tisch wenn Steuergesetze entstehen", "keywords": ["Lobbyismus Steuergesetz", "Transparency International", "BMF Lobbyisten"]},
+    {"kategorie": "Wirtschaft", "thema": "Private Equity und die Steuerlücke", "winkel": "Wie Private-Equity-Fonds systematisch weniger Steuern zahlen als die Unternehmen die sie aufkaufen", "keywords": ["Private Equity Steuern", "Carried Interest", "Finanzinvestoren Steuern"]},
+
+    # ── ALLTAG UND LEBENSREALITÄT ──
+    {"kategorie": "Gesellschaft", "thema": "Mehrwertsteuer – eine versteckt regressive Steuer", "winkel": "Reiche und Arme zahlen denselben Satz auf Lebensmittel – aber für Arme ist der Anteil am Einkommen viel größer", "keywords": ["Mehrwertsteuer Lebensmittel", "regressive Steuer", "Grundnahrungsmittel Steuer"]},
+    {"kategorie": "Gesellschaft", "thema": "Gesundheit und Vermögen", "winkel": "Wer arm ist, stirbt früher – und zahlt trotzdem denselben Kassenbeitrag wie Besserverdiener", "keywords": ["Krankenversicherung Ungleichheit", "Gesundheit Einkommen", "Krankenkasse sozial"]},
+    {"kategorie": "Gesellschaft", "thema": "Das Dienstwagenprivileg", "winkel": "Deutschland subventioniert Firmenwagen mit Milliarden – ein Steuervorteil der fast ausschließlich Gutverdienern zugutekommt", "keywords": ["Dienstwagenprivileg Kosten", "Firmenwagen Steuer", "Kfz Subvention"]},
+    {"kategorie": "Gesellschaft", "thema": "Mieten, Eigenheim und die große Spaltung", "winkel": "Wer Eigentum besitzt profitiert von steuerfreiem Wertzuwachs – wer mietet, baut Vermögen für andere auf", "keywords": ["Eigenheim Steuer", "Mietverhältnis Vermögen", "Wohneigentum Förderung"]},
+    {"kategorie": "Gesellschaft", "thema": "Bildung, Chancen und Vermögen", "winkel": "Wer reich geboren wird, bleibt reich – nicht wegen Leistung, sondern weil Vermögen Bildungschancen kauft", "keywords": ["Bildungsungleichheit Vermögen", "soziale Mobilität Deutschland", "Chancengerechtigkeit"]},
+    {"kategorie": "Gesellschaft", "thema": "Frauen, Vermögen und der Gender Wealth Gap", "winkel": "Das Gender Pay Gap ist bekannt – der Gender Wealth Gap ist noch größer und noch weniger diskutiert", "keywords": ["Gender Wealth Gap", "Frauen Vermögen", "Geschlechterungleichheit Steuern"]},
+    {"kategorie": "Gesellschaft", "thema": "Wohnungslosigkeit und Bodenspekulation", "winkel": "Menschen leben auf der Straße während Immobilien leer stehen – das Steuersystem macht das möglich", "keywords": ["Wohnungslosigkeit Steuern", "Leerstand Steuer", "Spekulation Wohnungen"]},
+
+    # ── INTERNATIONALE VERGLEICHE ──
+    {"kategorie": "Hintergrund", "thema": "Norwegen: Öl, Staatsfonds und Vermögenssteuer", "winkel": "Norwegen besteuert Vermögen, betreibt den größten Staatsfonds der Welt – und hat eine der stärksten Wirtschaften Europas", "keywords": ["Norwegen Vermögenssteuer", "Staatsfonds Norwegen", "Öl Steuer Norwegen"]},
+    {"kategorie": "Hintergrund", "thema": "USA: Wie Milliardäre Einkommensteuer legal auf null bringen", "winkel": "ProPublica hat geleakt: Die reichsten Amerikaner zahlen effektive Steuersätze unter einem Prozent – legal", "keywords": ["ProPublica Milliardäre Steuern", "USA Steuervermeidung", "Buffett Steuer"]},
+    {"kategorie": "Politik", "thema": "Frankreich und die abgeschaffte Vermögensteuer", "winkel": "Frankreich schaffte die Vermögensteuer ab – dann stiegen Ungleichheit und Staatsverschuldung", "keywords": ["Frankreich ISF Vermögensteuer", "Macron Vermögensteuer", "Frankreich Steuerpolitik"]},
+    {"kategorie": "Hintergrund", "thema": "Wie Steueroasen wirklich funktionieren", "winkel": "Was Singapur, Dubai und Monaco wirklich sind, wer sie nutzt, und was sie die Welt kosten", "keywords": ["Steueroasen Funktionsweise", "Monaco Steuern", "Dubai Steuern"]},
+
+    # ── ZUKUNFT UND NEUE THEMEN ──
+    {"kategorie": "Wirtschaft", "thema": "Automatisierung, KI und die Steuerfrage", "winkel": "Wenn Roboter und KI menschliche Arbeit ersetzen – wer zahlt dann die Sozialsysteme?", "keywords": ["Robotersteuer", "KI Automatisierung Steuern", "Maschinensteuer"]},
+    {"kategorie": "Wirtschaft", "thema": "Kryptowährungen und Steuervermeidung", "winkel": "Wie Krypto-Vermögen steuerlich kaum erfasst wird – und was sich ändern müsste", "keywords": ["Krypto Steuer Deutschland", "Bitcoin Steuern", "DeFi Steuer"]},
+    {"kategorie": "Hintergrund", "thema": "Grundeinkommen finanziert durch Vermögensteuer", "winkel": "Ein bedingungsloses Grundeinkommen finanziert durch Vermögensteuern – was die Forschung dazu sagt", "keywords": ["Grundeinkommen Finanzierung", "BGE Vermögensteuer", "UBI Deutschland"]},
+    {"kategorie": "Politik", "thema": "Wahlkampffinanzierung und Steuerpolitik", "winkel": "Wer Parteien finanziert, beeinflusst Steuerpolitik – eine Analyse der Verbindungen in Deutschland", "keywords": ["Parteispenden Steuern", "Wahlkampffinanzierung", "Demokratie Geld Steuern"]},
+    {"kategorie": "Hintergrund", "thema": "Piketty: r > g und was es bedeutet", "winkel": "Die bekannteste Formel der Wirtschaftswissenschaften erklärt warum Ungleichheit zwangsläufig wächst", "keywords": ["Piketty r größer g", "Kapital 21 Jahrhundert", "Ungleichheit Wachstum"]},
+    {"kategorie": "Gesellschaft", "thema": "Ehrenamt, Gemeinnützigkeit und Steuern", "winkel": "Wer sich ehrenamtlich engagiert trägt zur Gesellschaft bei – und wird dafür steuerlich kaum belohnt", "keywords": ["Ehrenamt Steuer", "Gemeinnützigkeit", "Zivilgesellschaft Steuern"]},
+    {"kategorie": "Wirtschaft", "thema": "Superreiche und Staatsbürgerschaft zu verkaufen", "winkel": "Wie reiche Einzelpersonen durch Citizenship-by-Investment-Programme Steuern legal auf null optimieren", "keywords": ["Goldenes Visum Steuern", "Staatsbürgerschaft kaufen", "Steueroptimierung Auswanderung"]},
+    {"kategorie": "Hintergrund", "thema": "Die Finanztransaktionssteuer – warum sie nie kommt", "winkel": "Eine Steuer von 0,1% auf Finanztransaktionen würde Milliarden einbringen – und wird seit 20 Jahren blockiert", "keywords": ["Finanztransaktionssteuer", "Tobin Tax", "Börsensteuer Deutschland"]},
 ]
 
 SYSTEM_PROMPT = """Du bist Redakteur bei SteuerWende. Antworte NUR mit rohem JSON, ohne Markdown, ohne Codeblöcke, ohne Erklärungen.
