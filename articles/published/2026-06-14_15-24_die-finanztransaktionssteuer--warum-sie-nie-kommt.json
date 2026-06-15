@@ -1,0 +1,102 @@
+{
+  "titel": "Die Finanztransaktionssteuer – warum sie nie kommt",
+  "untertitel": "Eine Steuer von 0,1 Prozent auf Börsenumsätze würde Milliarden einbringen. Seit über 20 Jahren wird sie blockiert – ein Lehrstück über die Macht der Finanzlobby.",
+  "kategorie": "Hintergrund",
+  "lesezeit": 7,
+  "inhalt": "<p>Die Idee ist so alt wie elegant: Bei jedem Kauf und Verkauf von Aktien, Anleihen oder Derivaten fällt eine winzige Abgabe an – meist 0,1 Prozent des Transaktionswerts. Für Kleinanleger kaum spürbar, für Hochfrequenzhändler mit Millionen Transaktionen pro Tag ein echtes Preisschild. Die sogenannte Finanztransaktionssteuer (FTS) würde nach Berechnungen der EU-Kommission allein in der Europäischen Union zwischen 57 und 65 Milliarden Euro jährlich einbringen. Dennoch scheitert sie seit Jahrzehnten an politischem Widerstand.</p><h3>Von Tobin bis zur EU: Eine Geschichte des Scheiterns</h3><p>Der Ökonom James Tobin schlug bereits 1972 eine Steuer auf Devisentransaktionen vor, um spekulative Kapitalbewegungen zu bremsen. Nach der Finanzkrise 2008 griff die EU-Kommission die Idee auf und legte 2011 einen konkreten Gesetzentwurf vor. 2013 starteten elf EU-Staaten – darunter Deutschland und Frankreich – das Verfahren der Verstärkten Zusammenarbeit, um die Steuer zumindest in einer Koalition der Willigen einzuführen. Über zehn Jahre später ist davon nichts übrig geblieben. Deutschland ließ den Vorschlag 2021 in einer stark verwässerten Version scheitern, die nur Aktien großer Unternehmen erfasst hätte – Derivate, das eigentliche Spekulationsinstrument, blieben ausgenommen.</p><h3>Wer blockiert – und warum?</h3><p>Das Tax Justice Network dokumentiert, wie die Finanzlobby systematisch gegen die FTS arbeitet. Allein in Brüssel beschäftigt die Finanzindustrie nach Angaben von Corporate Europe Observatory über 1.500 Lobbyisten mit einem geschätzten Jahresbudget von 120 Millionen Euro. Die Gegenargumente sind seit Jahren dieselben: Die Steuer treibe Handelsvolumen in unreglementierte Märkte, sie schade Pensionsfonds, sie sei technisch nicht umsetzbar. Dabei widerlegt die Realität diese Einwände bereits.</p><h3>Wo die Steuer längst funktioniert</h3><p>Großbritannien erhebt seit 1694 eine Stempelsteuer auf Aktientransaktionen – die heutige Stamp Duty Reserve Tax beträgt 0,5 Prozent und brachte im Steuerjahr 2023/24 rund 3,2 Milliarden Pfund ein. London ist trotzdem der größte Finanzplatz Europas. Frankreich führte 2012 eine FTS von 0,3 Prozent auf Aktien großer Unternehmen ein und generiert damit jährlich etwa 1,7 Milliarden Euro. Auch Indien erhebt seit 2004 eine Securities Transaction Tax – sie erbrachte im Fiskaljahr 2023/24 umgerechnet rund 28 Milliarden Euro, wie Jayati Ghosh von der University of Massachusetts betont, ohne dass der indische Kapitalmarkt zusammengebrochen wäre. Im Gegenteil: Der BSE Sensex hat sich in diesem Zeitraum vervielfacht.</p><h3>Was Deutschland entgeht</h3><p>Deutschland hatte bis 1991 selbst eine Börsenumsatzsteuer – sie wurde im Zuge der Finanzmarktliberalisierung abgeschafft. Das DIW Berlin schätzt, dass eine FTS von 0,1 Prozent auf Aktien und 0,01 Prozent auf Derivate dem deutschen Fiskus zwischen 12 und 18 Milliarden Euro jährlich einbringen könnte. Zum Vergleich: Die gesamte Erbschaftsteuer erbrachte 2023 nur 11,8 Milliarden Euro.</p><p>Die Finanztransaktionssteuer ist kein radikaler Vorschlag – sie ist eine moderate, erprobte und technisch machbare Maßnahme. Dass sie in Deutschland und der EU seit über zwei Jahrzehnten blockiert wird, sagt weniger über ökonomische Sachzwänge als über politische Machtverhältnisse aus. Der Nobelpreisträger Joseph Stiglitz bringt es auf den Punkt: Eine FTS würde die Finanzmärkte nicht zerstören – sie würde sie nur gerechter machen.</p>",
+  "daten_highlight": {
+    "zahl": "65 Mrd. €",
+    "beschreibung": "Geschätztes jährliches Aufkommen einer EU-weiten Finanztransaktionssteuer von 0,1 Prozent",
+    "quelle": "EU-Kommission 2011/2013"
+  },
+  "infografik": {
+    "typ": "balken",
+    "titel": "Einnahmen aus bestehenden Finanztransaktionssteuern",
+    "beschreibung": "Jährliche Steuereinnahmen durch Finanztransaktionssteuern in Ländern, die sie bereits erheben – und das geschätzte Potenzial für Deutschland",
+    "quelle": "HMRC 2024, Ministère des Finances 2024, Indian Ministry of Finance 2024, DIW Berlin 2023",
+    "daten": [
+      {
+        "label": "Indien",
+        "wert": 28.0,
+        "farbe": "blau"
+      },
+      {
+        "label": "Großbritannien",
+        "wert": 3.7,
+        "farbe": "blau"
+      },
+      {
+        "label": "Frankreich",
+        "wert": 1.7,
+        "farbe": "blau"
+      },
+      {
+        "label": "Deutschland (Schätzung)",
+        "wert": 15.0,
+        "farbe": "rot"
+      }
+    ]
+  },
+  "quellen": [
+    {
+      "autor": "EU-Kommission",
+      "titel": "Proposal for a Council Directive on a common system of financial transaction tax",
+      "jahr": 2013,
+      "url": "https://ec.europa.eu/taxation_customs/financial-transaction-tax_en"
+    },
+    {
+      "autor": "Tax Justice Network",
+      "titel": "Financial Transaction Taxes: Myth and Reality",
+      "jahr": 2023,
+      "url": "https://taxjustice.net/topics/financial-transaction-taxes/"
+    },
+    {
+      "autor": "HMRC",
+      "titel": "UK Stamp Taxes Statistics 2023-24",
+      "jahr": 2024,
+      "url": "https://www.gov.uk/government/statistics/uk-stamp-tax-statistics"
+    },
+    {
+      "autor": "Jayati Ghosh",
+      "titel": "India's Securities Transaction Tax – Lessons for Global Policy",
+      "jahr": 2023,
+      "url": "https://www.networkideas.org"
+    },
+    {
+      "autor": "DIW Berlin",
+      "titel": "Finanztransaktionssteuer: Aufkommenspotenzial und Verteilungswirkungen",
+      "jahr": 2023,
+      "url": "https://www.diw.de/de/diw_01.c.finanztransaktionssteuer.html"
+    },
+    {
+      "autor": "Corporate Europe Observatory",
+      "titel": "The Fire Power of the Financial Lobby",
+      "jahr": 2023,
+      "url": "https://corporateeurope.org/en/financial-lobby"
+    },
+    {
+      "autor": "Joseph Stiglitz",
+      "titel": "People, Power, and Profits – Progressive Capitalism for an Age of Discontent",
+      "jahr": 2019,
+      "url": "https://wwnorton.com/books/people-power-and-profits"
+    }
+  ],
+  "seo_beschreibung": "Die Finanztransaktionssteuer könnte in der EU über 60 Milliarden Euro jährlich einbringen. Warum sie seit 20 Jahren blockiert wird – und wo sie längst funktioniert.",
+  "tags": [
+    "Finanztransaktionssteuer",
+    "Tobin Tax",
+    "Börsensteuer Deutschland",
+    "Finanzlobby",
+    "EU-Steuerpolitik",
+    "Spekulationssteuer",
+    "Steuergerechtigkeit"
+  ],
+  "infografik_svg": "<svg viewBox=\"0 0 535 254\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:560px;display:block;margin:0 auto;\"><text x=\"20\" y=\"24\" font-size=\"14\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">Einnahmen aus bestehenden Finanztransaktionssteuern</text><text x=\"197\" y=\"64\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Indien</text><rect x=\"205\" y=\"44\" width=\"230\" height=\"30\" fill=\"#2d6a9f\" rx=\"3\"/><text x=\"443\" y=\"64\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">28.0%</text><text x=\"197\" y=\"110\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Großbritannien</text><rect x=\"205\" y=\"90\" width=\"30\" height=\"30\" fill=\"#2d6a9f\" rx=\"3\"/><text x=\"243\" y=\"110\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">3.7%</text><text x=\"197\" y=\"156\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Frankreich</text><rect x=\"205\" y=\"136\" width=\"13\" height=\"30\" fill=\"#2d6a9f\" rx=\"3\"/><text x=\"226\" y=\"156\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">1.7%</text><text x=\"197\" y=\"202\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Deutschland (Schätzung)</text><rect x=\"205\" y=\"182\" width=\"123\" height=\"30\" fill=\"#c8102e\" rx=\"3\"/><text x=\"336\" y=\"202\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">15.0%</text><text x=\"20\" y=\"246\" font-size=\"11\" fill=\"#9ca3af\" font-family=\"sans-serif\">Quelle: HMRC 2024, Ministère des Finances 2024, Indian Ministry of Finance 2024, DIW Ber</text></svg>",
+  "_meta": {
+    "erstellt": "2026-06-14T15:24:59.977582",
+    "status": "veröffentlicht",
+    "slug": "die-finanztransaktionssteuer--warum-sie-nie-kommt",
+    "filename": "2026-06-14_15-24_die-finanztransaktionssteuer--warum-sie-nie-kommt.json",
+    "veröffentlicht_am": "2026-06-15T13:16:27.352746"
+  }
+}
