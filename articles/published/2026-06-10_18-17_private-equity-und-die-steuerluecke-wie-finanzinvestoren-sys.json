@@ -9,39 +9,6 @@
     "beschreibung": "Effektive Steuerquote von Private-Equity-Strukturen in Europa – fast halb so viel wie der deutsche Mittelstand zahlt",
     "quelle": "EU Tax Observatory 2023"
   },
-  "infografik": {
-    "typ": "balken",
-    "titel": "Effektive Steuerbelastung: Private Equity vs. reguläre Unternehmen",
-    "beschreibung": "Vergleich der effektiven Steuersätze von Private-Equity-Strukturen mit der regulären Unternehmensbesteuerung in ausgewählten Ländern",
-    "quelle": "EU Tax Observatory 2023, DIW Berlin, OECD",
-    "daten": [
-      {
-        "label": "Deutscher Mittelstand",
-        "wert": 29.0,
-        "farbe": "rot"
-      },
-      {
-        "label": "PE-Fonds Europa (effektiv)",
-        "wert": 15.0,
-        "farbe": "blau"
-      },
-      {
-        "label": "Carried Interest (Deutschland)",
-        "wert": 25.0,
-        "farbe": "blau"
-      },
-      {
-        "label": "Regulärer Spitzensteuersatz",
-        "wert": 45.0,
-        "farbe": "grau"
-      },
-      {
-        "label": "PE-Fonds über Cayman Islands",
-        "wert": 0.0,
-        "farbe": "blau"
-      }
-    ]
-  },
   "quellen": [
     {
       "autor": "EU Tax Observatory / Gabriel Zucman",
@@ -91,12 +58,34 @@
     "Unternehmensbesteuerung",
     "Steuergerechtigkeit"
   ],
-  "infografik_svg": "<svg viewBox=\"0 0 535 300\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:560px;display:block;margin:0 auto;\"><text x=\"20\" y=\"24\" font-size=\"14\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">Effektive Steuerbelastung: Private Equity vs. reguläre Unternehme</text><text x=\"197\" y=\"64\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Deutscher Mittelstand</text><rect x=\"205\" y=\"44\" width=\"148\" height=\"30\" fill=\"#c8102e\" rx=\"3\"/><text x=\"361\" y=\"64\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">29.0%</text><text x=\"197\" y=\"110\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">PE-Fonds Europa (effektiv)</text><rect x=\"205\" y=\"90\" width=\"76\" height=\"30\" fill=\"#2d6a9f\" rx=\"3\"/><text x=\"289\" y=\"110\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">15.0%</text><text x=\"197\" y=\"156\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Carried Interest (Deutschland)</text><rect x=\"205\" y=\"136\" width=\"127\" height=\"30\" fill=\"#2d6a9f\" rx=\"3\"/><text x=\"340\" y=\"156\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">25.0%</text><text x=\"197\" y=\"202\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Regulärer Spitzensteuersatz</text><rect x=\"205\" y=\"182\" width=\"230\" height=\"30\" fill=\"#9ca3af\" rx=\"3\"/><text x=\"443\" y=\"202\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">45.0%</text><text x=\"197\" y=\"248\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">PE-Fonds über Cayman Islands</text><rect x=\"205\" y=\"228\" width=\"3\" height=\"30\" fill=\"#2d6a9f\" rx=\"3\"/><text x=\"216\" y=\"248\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">0.0%</text><text x=\"20\" y=\"292\" font-size=\"11\" fill=\"#9ca3af\" font-family=\"sans-serif\">Quelle: EU Tax Observatory 2023, DIW Berlin, OECD</text></svg>",
   "_meta": {
     "erstellt": "2026-06-10T18:17:30.847683",
     "status": "veröffentlicht",
     "slug": "private-equity-und-die-steuerluecke-wie-finanzinvestoren-sys",
     "filename": "2026-06-10_18-17_private-equity-und-die-steuerluecke-wie-finanzinvestoren-sys.json",
     "veröffentlicht_am": "2026-06-11T15:13:13.128178"
-  }
+  },
+  "infografik": {
+    "typ": "balken",
+    "titel": "Steuersatz: Carried Interest vs. Lohn",
+    "quelle": "BMF / EStG 2024",
+    "daten": [
+      {
+        "label": "Carried Interest",
+        "wert": 25.0,
+        "farbe": "rot"
+      },
+      {
+        "label": "Spitzensteuersatz",
+        "wert": 42.0,
+        "farbe": "grau"
+      },
+      {
+        "label": "Höchststeuersatz",
+        "wert": 45.0,
+        "farbe": "blau"
+      }
+    ]
+  },
+  "infografik_svg": "<svg viewBox=\"0 0 535 208\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:560px;display:block;margin:0 auto;\"><text x=\"20\" y=\"24\" font-size=\"14\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">Steuersatz: Carried Interest vs. Lohn</text><text x=\"197\" y=\"64\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Carried Interest</text><rect x=\"205\" y=\"44\" width=\"127\" height=\"30\" fill=\"#c8102e\" rx=\"3\"/><text x=\"340\" y=\"64\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">25.0%</text><text x=\"197\" y=\"110\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Spitzensteuersatz</text><rect x=\"205\" y=\"90\" width=\"214\" height=\"30\" fill=\"#2d6a9f\" rx=\"3\"/><text x=\"427\" y=\"110\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">42.0%</text><text x=\"197\" y=\"156\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Höchststeuersatz</text><rect x=\"205\" y=\"136\" width=\"230\" height=\"30\" fill=\"#f0a500\" rx=\"3\"/><text x=\"443\" y=\"156\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">45.0%</text><text x=\"20\" y=\"200\" font-size=\"11\" fill=\"#9ca3af\" font-family=\"sans-serif\">Quelle: BMF / EStG 2024</text></svg>"
 }

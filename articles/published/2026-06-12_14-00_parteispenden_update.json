@@ -9,34 +9,6 @@
     "beschreibung": "Millionenspenden 2024/2025 – mehr als in den 24 Jahren zuvor zusammen",
     "quelle": "Lobbycontrol 2026"
   },
-  "infografik": {
-    "typ": "balken",
-    "titel": "Großspenden 2024/2025 im Vergleich (Mio. €)",
-    "quelle": "Bundestag 2024, abgeordnetenwatch/Lobbycontrol 2025",
-    "daten": [
-      {
-        "label": "CDU/CSU",
-        "wert": 5.3,
-        "farbe": "rot"
-      },
-      {
-        "label": "AfD",
-        "wert": 4.8,
-        "farbe": "grau"
-      },
-      {
-        "label": "FDP",
-        "wert": 4.3,
-        "farbe": "blau"
-      },
-      {
-        "label": "BSW",
-        "wert": 6.4,
-        "farbe": "gold"
-      }
-    ]
-  },
-  "infografik_svg": "<svg viewBox=\"0 0 530 262\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:560px;display:block;margin:0 auto;\"><text x=\"20\" y=\"24\" font-size=\"14\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">Großspenden 2024/2025 im Vergleich (Mio. €)</text><text x=\"212\" y=\"64\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">CDU/CSU</text><rect x=\"220\" y=\"44\" width=\"173\" height=\"30\" fill=\"#c8102e\" rx=\"3\"/><text x=\"401\" y=\"64\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">5.3 Mio. €</text><text x=\"212\" y=\"112\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">AfD</text><rect x=\"220\" y=\"92\" width=\"157\" height=\"30\" fill=\"#9ca3af\" rx=\"3\"/><text x=\"385\" y=\"112\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">4.8 Mio. €</text><text x=\"212\" y=\"160\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">FDP</text><rect x=\"220\" y=\"140\" width=\"141\" height=\"30\" fill=\"#2d6a9f\" rx=\"3\"/><text x=\"369\" y=\"160\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">4.3 Mio. €</text><text x=\"212\" y=\"208\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">BSW</text><rect x=\"220\" y=\"188\" width=\"210\" height=\"30\" fill=\"#f0a500\" rx=\"3\"/><text x=\"438\" y=\"208\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">6.4 Mio. €</text><text x=\"20\" y=\"254\" font-size=\"11\" fill=\"#9ca3af\" font-family=\"sans-serif\">Quelle: Bundestag 2024, abgeordnetenwatch/Lobbycontrol 2025</text></svg>",
   "quellen": [
     {
       "autor": "Lobbycontrol",
@@ -96,5 +68,33 @@
     "status": "veröffentlicht",
     "slug": "wer-zahlt-bestimmt-parteispenden-und-steuerpolitik-das-update-2026",
     "filename": "2026-06-12_14-00_parteispenden_update.json"
-  }
+  },
+  "infografik": {
+    "typ": "balken",
+    "titel": "Großspenden: CDU/CSU & FDP dominieren",
+    "quelle": "Bundestag Spendenberichte 2021",
+    "daten": [
+      {
+        "label": "CDU/CSU",
+        "wert": 52.0,
+        "farbe": "rot"
+      },
+      {
+        "label": "FDP",
+        "wert": 29.0,
+        "farbe": "grau"
+      },
+      {
+        "label": "SPD",
+        "wert": 10.0,
+        "farbe": "blau"
+      },
+      {
+        "label": "Grüne",
+        "wert": 9.0,
+        "farbe": "blau"
+      }
+    ]
+  },
+  "infografik_svg": "<svg viewBox=\"0 0 535 254\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:560px;display:block;margin:0 auto;\"><text x=\"20\" y=\"24\" font-size=\"14\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">Großspenden: CDU/CSU & FDP dominieren</text><text x=\"197\" y=\"64\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">CDU/CSU</text><rect x=\"205\" y=\"44\" width=\"230\" height=\"30\" fill=\"#c8102e\" rx=\"3\"/><text x=\"443\" y=\"64\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">52.0%</text><text x=\"197\" y=\"110\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">FDP</text><rect x=\"205\" y=\"90\" width=\"128\" height=\"30\" fill=\"#2d6a9f\" rx=\"3\"/><text x=\"341\" y=\"110\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">29.0%</text><text x=\"197\" y=\"156\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">SPD</text><rect x=\"205\" y=\"136\" width=\"44\" height=\"30\" fill=\"#f0a500\" rx=\"3\"/><text x=\"257\" y=\"156\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">10.0%</text><text x=\"197\" y=\"202\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Grüne</text><rect x=\"205\" y=\"182\" width=\"39\" height=\"30\" fill=\"#2d8a6a\" rx=\"3\"/><text x=\"252\" y=\"202\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">9.0%</text><text x=\"20\" y=\"246\" font-size=\"11\" fill=\"#9ca3af\" font-family=\"sans-serif\">Quelle: Bundestag Spendenberichte 2021</text></svg>"
 }

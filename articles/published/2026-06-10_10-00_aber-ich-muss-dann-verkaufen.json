@@ -9,29 +9,6 @@
     "beschreibung": "Durchschnittliche jährliche Rendite auf Vermögen beim reichsten Prozent – eine 1%-Vermögensteuer wäre aus Erträgen finanzierbar",
     "quelle": "DIW Berlin 2023"
   },
-  "infografik": {
-    "typ": "balken",
-    "titel": "Rendite vs. Vermögensteuer: Wer muss verkaufen?",
-    "quelle": "DIW Berlin 2023, eigene Berechnung",
-    "daten": [
-      {
-        "label": "Jährl. Rendite (5%)",
-        "wert": 5.0,
-        "farbe": "blau"
-      },
-      {
-        "label": "Vermögensteuer (1%)",
-        "wert": 1.0,
-        "farbe": "rot"
-      },
-      {
-        "label": "Verbleibt netto",
-        "wert": 4.0,
-        "farbe": "grau"
-      }
-    ]
-  },
-  "infografik_svg": "<svg viewBox=\"0 0 530 214\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:560px;display:block;margin:0 auto;\"><text x=\"20\" y=\"24\" font-size=\"14\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">Rendite vs. Vermögensteuer: Wer muss verkaufen?</text><text x=\"212\" y=\"64\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Jährl. Rendite (5%)</text><rect x=\"220\" y=\"44\" width=\"210\" height=\"30\" fill=\"#2d6a9f\" rx=\"3\"/><text x=\"438\" y=\"64\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">5.0%</text><text x=\"212\" y=\"112\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Vermögensteuer (1%)</text><rect x=\"220\" y=\"92\" width=\"42\" height=\"30\" fill=\"#c8102e\" rx=\"3\"/><text x=\"270\" y=\"112\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">1.0%</text><text x=\"212\" y=\"160\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Verbleibt netto</text><rect x=\"220\" y=\"140\" width=\"168\" height=\"30\" fill=\"#9ca3af\" rx=\"3\"/><text x=\"396\" y=\"160\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">4.0%</text><text x=\"20\" y=\"206\" font-size=\"11\" fill=\"#9ca3af\" font-family=\"sans-serif\">Quelle: DIW Berlin 2023, eigene Berechnung</text></svg>",
   "quellen": [
     {
       "autor": "Bach, S. / Thiemann, A.",
@@ -78,5 +55,28 @@
     "status": "entwurf",
     "slug": "aber-ich-muss-dann-verkaufen-das-schwaechste-argument-gegen-die-vermoegensteuer",
     "filename": "2026-06-10_10-00_aber-ich-muss-dann-verkaufen.json"
-  }
+  },
+  "infografik": {
+    "typ": "balken",
+    "titel": "Vermögensteuer: Ertrag vs. Last",
+    "quelle": "DIW / OECD 2024",
+    "daten": [
+      {
+        "label": "Kapitalrendite",
+        "wert": 5.0,
+        "farbe": "blau"
+      },
+      {
+        "label": "Vermögensteuer",
+        "wert": 1.0,
+        "farbe": "grau"
+      },
+      {
+        "label": "Effektive Last",
+        "wert": 0.0,
+        "farbe": "rot"
+      }
+    ]
+  },
+  "infografik_svg": "<svg viewBox=\"0 0 535 208\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:560px;display:block;margin:0 auto;\"><text x=\"20\" y=\"24\" font-size=\"14\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">Vermögensteuer: Ertrag vs. Last</text><text x=\"197\" y=\"64\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Kapitalrendite</text><rect x=\"205\" y=\"44\" width=\"230\" height=\"30\" fill=\"#c8102e\" rx=\"3\"/><text x=\"443\" y=\"64\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">5.0%</text><text x=\"197\" y=\"110\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Vermögensteuer</text><rect x=\"205\" y=\"90\" width=\"46\" height=\"30\" fill=\"#2d6a9f\" rx=\"3\"/><text x=\"259\" y=\"110\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">1.0%</text><text x=\"197\" y=\"156\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Effektive Last</text><rect x=\"205\" y=\"136\" width=\"3\" height=\"30\" fill=\"#f0a500\" rx=\"3\"/><text x=\"216\" y=\"156\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">0.0%</text><text x=\"20\" y=\"200\" font-size=\"11\" fill=\"#9ca3af\" font-family=\"sans-serif\">Quelle: DIW / OECD 2024</text></svg>"
 }

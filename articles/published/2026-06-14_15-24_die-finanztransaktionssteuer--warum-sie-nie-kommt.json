@@ -9,34 +9,6 @@
     "beschreibung": "Geschätztes jährliches Aufkommen einer EU-weiten Finanztransaktionssteuer von 0,1 Prozent",
     "quelle": "EU-Kommission 2011/2013"
   },
-  "infografik": {
-    "typ": "balken",
-    "titel": "Einnahmen aus bestehenden Finanztransaktionssteuern",
-    "beschreibung": "Jährliche Steuereinnahmen durch Finanztransaktionssteuern in Ländern, die sie bereits erheben – und das geschätzte Potenzial für Deutschland",
-    "quelle": "HMRC 2024, Ministère des Finances 2024, Indian Ministry of Finance 2024, DIW Berlin 2023",
-    "daten": [
-      {
-        "label": "Indien",
-        "wert": 28.0,
-        "farbe": "blau"
-      },
-      {
-        "label": "Großbritannien",
-        "wert": 3.7,
-        "farbe": "blau"
-      },
-      {
-        "label": "Frankreich",
-        "wert": 1.7,
-        "farbe": "blau"
-      },
-      {
-        "label": "Deutschland (Schätzung)",
-        "wert": 15.0,
-        "farbe": "rot"
-      }
-    ]
-  },
   "quellen": [
     {
       "autor": "EU-Kommission",
@@ -91,12 +63,39 @@
     "Spekulationssteuer",
     "Steuergerechtigkeit"
   ],
-  "infografik_svg": "<svg viewBox=\"0 0 535 254\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:560px;display:block;margin:0 auto;\"><text x=\"20\" y=\"24\" font-size=\"14\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">Einnahmen aus bestehenden Finanztransaktionssteuern</text><text x=\"197\" y=\"64\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Indien</text><rect x=\"205\" y=\"44\" width=\"230\" height=\"30\" fill=\"#2d6a9f\" rx=\"3\"/><text x=\"443\" y=\"64\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">28.0%</text><text x=\"197\" y=\"110\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Großbritannien</text><rect x=\"205\" y=\"90\" width=\"30\" height=\"30\" fill=\"#2d6a9f\" rx=\"3\"/><text x=\"243\" y=\"110\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">3.7%</text><text x=\"197\" y=\"156\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Frankreich</text><rect x=\"205\" y=\"136\" width=\"13\" height=\"30\" fill=\"#2d6a9f\" rx=\"3\"/><text x=\"226\" y=\"156\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">1.7%</text><text x=\"197\" y=\"202\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Deutschland (Schätzung)</text><rect x=\"205\" y=\"182\" width=\"123\" height=\"30\" fill=\"#c8102e\" rx=\"3\"/><text x=\"336\" y=\"202\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">15.0%</text><text x=\"20\" y=\"246\" font-size=\"11\" fill=\"#9ca3af\" font-family=\"sans-serif\">Quelle: HMRC 2024, Ministère des Finances 2024, Indian Ministry of Finance 2024, DIW Ber</text></svg>",
   "_meta": {
     "erstellt": "2026-06-14T15:24:59.977582",
     "status": "veröffentlicht",
     "slug": "die-finanztransaktionssteuer--warum-sie-nie-kommt",
     "filename": "2026-06-14_15-24_die-finanztransaktionssteuer--warum-sie-nie-kommt.json",
     "veröffentlicht_am": "2026-06-15T13:16:27.352746"
-  }
+  },
+  "infografik": {
+    "typ": "balken",
+    "titel": "Finanztransaktionssteuer weltweit",
+    "quelle": "EU-Kommission 2013, OECD 2024",
+    "daten": [
+      {
+        "label": "Frankreich",
+        "wert": 0.3,
+        "farbe": "blau"
+      },
+      {
+        "label": "Italien",
+        "wert": 0.2,
+        "farbe": "blau"
+      },
+      {
+        "label": "UK (bis 2024)",
+        "wert": 0.5,
+        "farbe": "grau"
+      },
+      {
+        "label": "Deutschland",
+        "wert": 0.0,
+        "farbe": "rot"
+      }
+    ]
+  },
+  "infografik_svg": "<svg viewBox=\"0 0 535 254\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:560px;display:block;margin:0 auto;\"><text x=\"20\" y=\"24\" font-size=\"14\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">Finanztransaktionssteuer weltweit</text><text x=\"197\" y=\"64\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Frankreich</text><rect x=\"205\" y=\"44\" width=\"138\" height=\"30\" fill=\"#c8102e\" rx=\"3\"/><text x=\"351\" y=\"64\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">0.3%</text><text x=\"197\" y=\"110\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Italien</text><rect x=\"205\" y=\"90\" width=\"92\" height=\"30\" fill=\"#2d6a9f\" rx=\"3\"/><text x=\"305\" y=\"110\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">0.2%</text><text x=\"197\" y=\"156\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">UK (bis 2024)</text><rect x=\"205\" y=\"136\" width=\"230\" height=\"30\" fill=\"#f0a500\" rx=\"3\"/><text x=\"443\" y=\"156\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">0.5%</text><text x=\"197\" y=\"202\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Deutschland</text><rect x=\"205\" y=\"182\" width=\"3\" height=\"30\" fill=\"#2d8a6a\" rx=\"3\"/><text x=\"216\" y=\"202\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">0.0%</text><text x=\"20\" y=\"246\" font-size=\"11\" fill=\"#9ca3af\" font-family=\"sans-serif\">Quelle: EU-Kommission 2013, OECD 2024</text></svg>"
 }

@@ -9,39 +9,6 @@
     "beschreibung": "aller Erbschaften in Deutschland lägen unter einem Freibetrag von 2 Mio. Euro – nur die obersten Prozente wären betroffen",
     "quelle": "DIW Berlin, Schätzung basierend auf PHF-Daten 2021"
   },
-  "infografik": {
-    "typ": "balken",
-    "titel": "Erbschaftsteuer im internationalen Vergleich",
-    "quelle": "OECD Tax Database 2024",
-    "daten": [
-      {
-        "label": "Japan",
-        "wert": 55.0,
-        "farbe": "blau"
-      },
-      {
-        "label": "Südkorea",
-        "wert": 50.0,
-        "farbe": "blau"
-      },
-      {
-        "label": "USA",
-        "wert": 40.0,
-        "farbe": "blau"
-      },
-      {
-        "label": "Frankreich",
-        "wert": 45.0,
-        "farbe": "blau"
-      },
-      {
-        "label": "Deutschland",
-        "wert": 30.0,
-        "farbe": "rot"
-      }
-    ]
-  },
-  "infografik_svg": "<svg viewBox=\"0 0 530 310\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:560px;display:block;margin:0 auto;\"><text x=\"20\" y=\"24\" font-size=\"14\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">Erbschaftsteuer im internationalen Vergleich</text><text x=\"212\" y=\"64\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Japan</text><rect x=\"220\" y=\"44\" width=\"210\" height=\"30\" fill=\"#2d6a9f\" rx=\"3\"/><text x=\"438\" y=\"64\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">55.0%</text><text x=\"212\" y=\"112\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Südkorea</text><rect x=\"220\" y=\"92\" width=\"190\" height=\"30\" fill=\"#2d6a9f\" rx=\"3\"/><text x=\"418\" y=\"112\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">50.0%</text><text x=\"212\" y=\"160\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">USA</text><rect x=\"220\" y=\"140\" width=\"152\" height=\"30\" fill=\"#2d6a9f\" rx=\"3\"/><text x=\"380\" y=\"160\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">40.0%</text><text x=\"212\" y=\"208\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Frankreich</text><rect x=\"220\" y=\"188\" width=\"171\" height=\"30\" fill=\"#2d6a9f\" rx=\"3\"/><text x=\"399\" y=\"208\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">45.0%</text><text x=\"212\" y=\"256\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Deutschland</text><rect x=\"220\" y=\"236\" width=\"114\" height=\"30\" fill=\"#c8102e\" rx=\"3\"/><text x=\"342\" y=\"256\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">30.0%</text><text x=\"20\" y=\"302\" font-size=\"11\" fill=\"#9ca3af\" font-family=\"sans-serif\">Quelle: OECD Tax Database 2024</text></svg>",
   "quellen": [
     {
       "autor": "Piketty, Thomas",
@@ -83,5 +50,23 @@
     "status": "veröffentlicht",
     "slug": "wenn-die-erbin-verkaufen-muss-warum-das-kein-argument-gegen-die-erbschaftsteuer-ist",
     "filename": "2026-06-10_11-00_erbschaft_verkauf.json"
-  }
+  },
+  "infografik": {
+    "typ": "balken",
+    "titel": "Erbschaft: Freibetrag vs. Steuerlast",
+    "quelle": "SteuerWende-Modellrechnung 2024",
+    "daten": [
+      {
+        "label": "Erbin A: Haus",
+        "wert": 0,
+        "farbe": "blau"
+      },
+      {
+        "label": "Erbin B: 15 Mio.",
+        "wert": 30,
+        "farbe": "rot"
+      }
+    ]
+  },
+  "infografik_svg": "<svg viewBox=\"0 0 535 162\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:560px;display:block;margin:0 auto;\"><text x=\"20\" y=\"24\" font-size=\"14\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">Erbschaft: Freibetrag vs. Steuerlast</text><text x=\"197\" y=\"64\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Erbin A: Haus</text><rect x=\"205\" y=\"44\" width=\"3\" height=\"30\" fill=\"#c8102e\" rx=\"3\"/><text x=\"216\" y=\"64\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">0%</text><text x=\"197\" y=\"110\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Erbin B: 15 Mio.</text><rect x=\"205\" y=\"90\" width=\"230\" height=\"30\" fill=\"#2d6a9f\" rx=\"3\"/><text x=\"443\" y=\"110\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">30%</text><text x=\"20\" y=\"154\" font-size=\"11\" fill=\"#9ca3af\" font-family=\"sans-serif\">Quelle: SteuerWende-Modellrechnung 2024</text></svg>"
 }
