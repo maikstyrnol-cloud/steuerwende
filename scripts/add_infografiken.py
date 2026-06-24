@@ -46,17 +46,19 @@ Artikel:
 
 
 def build_svg_balken(info):
+    """Generiert ein SVG-Balkendiagramm aus den Infografik-Daten."""
     daten = info.get("daten", [])
     if not daten:
         return ""
-    farben = {"rot": "#c8102e", "blau": "#2d6a9f", "grau": "#9ca3af", "gold": "#f0a500"}
+    # Feste Palette – jeder Balken bekommt automatisch eine eigene Farbe, nie doppelt
+    PALETTE = ["#c8102e", "#2d6a9f", "#f0a500", "#2d8a6a", "#7b4fa6", "#e07b2a"]
     max_wert = max(d["wert"] for d in daten)
     if max_wert == 0:
         max_wert = 1
     bar_h = 30
-    gap = 18
-    label_w = 200
-    bar_max_w = 210
+    gap = 16
+    label_w = 185
+    bar_max_w = 230
     pad = 20
     total_w = pad + label_w + bar_max_w + 80 + pad
     total_h = len(daten) * (bar_h + gap) + 70
@@ -64,8 +66,11 @@ def build_svg_balken(info):
     for i, d in enumerate(daten):
         y = 44 + i * (bar_h + gap)
         w = max(3, int((d["wert"] / max_wert) * bar_max_w))
-        farbe = farben.get(d.get("farbe", "blau"), "#2d6a9f")
-        einheit = " Mrd." if d["wert"] >= 1000 else "%"
+        farbe = PALETTE[i % len(PALETTE)]
+        if d["wert"] >= 1000:
+            einheit = " Mrd."
+        else:
+            einheit = "%"
         label = d["label"][:30]
         bars += f'<text x="{pad + label_w - 8}" y="{y + bar_h//2 + 5}" text-anchor="end" font-size="12" fill="#4b5563" font-family="sans-serif">{label}</text>'
         bars += f'<rect x="{pad + label_w}" y="{y}" width="{w}" height="{bar_h}" fill="{farbe}" rx="3"/>'
