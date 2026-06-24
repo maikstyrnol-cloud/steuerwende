@@ -1,0 +1,96 @@
+{
+  "titel": "Wer den Klimawandel verursacht – und wer dafür bezahlt",
+  "untertitel": "Die ärmsten Länder tragen die geringste Verantwortung für die Erderhitzung, erleiden aber die größten Schäden. Die Finanzierung bleibt eine Frage globaler Steuergerechtigkeit.",
+  "kategorie": "Klima",
+  "lesezeit": 6,
+  "inhalt": "<p>Im Jahr 2022 versanken große Teile Pakistans in den Fluten. Die Schäden beliefen sich laut Weltbank auf über 30 Milliarden US-Dollar – in einem Land, das historisch für weniger als 0,4 Prozent der globalen CO₂-Emissionen verantwortlich ist. Es ist kein Einzelfall, sondern ein Muster: Die Länder, die am wenigsten zum Klimawandel beigetragen haben, zahlen den höchsten Preis.</p><p>Eine Studie der Dartmouth-Universität beziffert die klimabedingten Einkommensverluste der ärmsten Länder zwischen 1992 und 2021 auf insgesamt rund 1,6 Billionen US-Dollar. Gleichzeitig konnten einige nördliche Volkswirtschaften von milderen Wintern sogar profitieren. Die Klimakrise ist damit auch eine gigantische Umverteilungsmaschine – von Süd nach Nord, von arm zu reich.</p><h2>Historische Schuld, aktuelle Verweigerung</h2><p>Laut dem Global Carbon Project entfallen rund 80 Prozent der historischen CO₂-Emissionen auf die Industriestaaten und China. Die 46 am wenigsten entwickelten Länder sind zusammen für weniger als vier Prozent verantwortlich. Trotzdem erleiden gerade sie laut dem Climate Risk Index von Germanwatch die häufigsten und tödlichsten Extremwetterereignisse.</p><p>Die UN-Klimakonferenz COP27 in Sharm el-Sheikh beschloss 2022 erstmals einen Fonds für klimabedingte Schäden und Verluste – den sogenannten Loss and Damage Fund. Doch die bisherigen Zusagen bleiben weit hinter dem Bedarf zurück. Bis Ende 2024 wurden rund 700 Millionen US-Dollar zugesagt. Der tatsächliche jährliche Bedarf wird vom Umweltprogramm der Vereinten Nationen auf 290 bis 580 Milliarden US-Dollar geschätzt – allein für Entwicklungsländer bis 2030.</p><h2>Steuerpolitische Lösungen existieren</h2><p>Jayati Ghosh, Ökonomin an der University of Massachusetts Amherst und Mitglied der UN-Beratungsgruppe für Wirtschaftspolitik, argumentiert seit Jahren, dass die Klimafinanzierung nicht als Almosen, sondern als Ausgleichspflicht verstanden werden muss. Eine globale Vermögenssteuer auf die reichsten 0,5 Prozent könnte laut dem EU Tax Observatory jährlich rund 250 Milliarden US-Dollar mobilisieren – und damit einen Großteil der Klimaschäden abdecken.</p><p>Auch das Tax Justice Network Africa fordert, dass illegale Finanzflüsse aus afrikanischen Ländern – geschätzt 89 Milliarden US-Dollar jährlich laut UNCTAD – gestoppt werden, damit betroffene Staaten überhaupt eigene Mittel für Klimaanpassung aufbringen können. Die ehemalige CEPAL-Generalsekretärin Alicia Bárcena betonte wiederholt, dass Lateinamerika und die Karibik durch Verschuldung und Kapitalflucht systematisch daran gehindert werden, in Klimaresilienz zu investieren.</p><h2>Klimagerechtigkeit ist Steuergerechtigkeit</h2><p>Die Zahlen sind eindeutig: Wer historisch die Atmosphäre als kostenlosen Abfallplatz genutzt hat, müsste nach dem Verursacherprinzip zahlen. Doch stattdessen fließen Milliarden in fossile Subventionen – laut IWF weltweit 7,1 Billionen US-Dollar im Jahr 2022. Das Geld für Klimagerechtigkeit existiert. Es wird nur an der falschen Stelle ausgegeben.</p>",
+  "daten_highlight": {
+    "zahl": "0,4 %",
+    "beschreibung": "Pakistans historischer Anteil an den globalen CO₂-Emissionen – trotz über 30 Milliarden US-Dollar Klimaschäden allein 2022",
+    "quelle": "Weltbank / Global Carbon Project 2023"
+  },
+  "infografik": {
+    "typ": "balken",
+    "titel": "Historische CO₂-Emissionen nach Region",
+    "quelle": "Global Carbon Project 2023",
+    "daten": [
+      {
+        "label": "USA",
+        "wert": 24.6
+      },
+      {
+        "label": "EU-27",
+        "wert": 17.1
+      },
+      {
+        "label": "China",
+        "wert": 14.4
+      },
+      {
+        "label": "Russland",
+        "wert": 6.8
+      },
+      {
+        "label": "Indien",
+        "wert": 3.4
+      },
+      {
+        "label": "Ärmste 46 Länder",
+        "wert": 3.8
+      }
+    ]
+  },
+  "quellen": [
+    {
+      "autor": "Global Carbon Project",
+      "titel": "Global Carbon Budget 2023",
+      "jahr": 2023,
+      "url": ""
+    },
+    {
+      "autor": "Weltbank",
+      "titel": "Pakistan Floods 2022 – Post-Disaster Needs Assessment",
+      "jahr": 2022,
+      "url": ""
+    },
+    {
+      "autor": "Callahan/Mankin",
+      "titel": "National attribution of historical climate damages",
+      "jahr": 2022,
+      "url": ""
+    },
+    {
+      "autor": "UNEP",
+      "titel": "Adaptation Gap Report 2023",
+      "jahr": 2023,
+      "url": ""
+    },
+    {
+      "autor": "EU Tax Observatory",
+      "titel": "Global Tax Evasion Report 2024",
+      "jahr": 2024,
+      "url": ""
+    },
+    {
+      "autor": "IWF",
+      "titel": "Fossil Fuel Subsidies Data 2023",
+      "jahr": 2023,
+      "url": ""
+    }
+  ],
+  "seo_beschreibung": "Die ärmsten Länder verursachen kaum CO₂-Emissionen, tragen aber die größten Klimaschäden. Warum Klimagerechtigkeit eine Frage der Steuerpolitik ist.",
+  "tags": [
+    "Klimaschäden",
+    "Loss and Damage",
+    "Klimagerechtigkeit",
+    "Steuern",
+    "CO₂-Emissionen"
+  ],
+  "_meta": {
+    "erstellt": "2026-06-16T22:22:48.614232",
+    "status": "veröffentlicht",
+    "slug": "wer-den-klimawandel-verursacht--und-wer-dafuer-bezahlt",
+    "filename": "2026-06-16_22-22_wer-den-klimawandel-verursacht--und-wer-dafuer-bezahlt.json"
+  },
+  "infografik_svg": "<svg viewBox=\"0 0 535 346\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:560px;display:block;margin:0 auto;\"><text x=\"20\" y=\"24\" font-size=\"14\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">Historische CO₂-Emissionen nach Region</text><text x=\"197\" y=\"64\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">USA</text><rect x=\"205\" y=\"44\" width=\"230\" height=\"30\" fill=\"#c8102e\" rx=\"3\"/><text x=\"443\" y=\"64\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">24.6%</text><text x=\"197\" y=\"110\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">EU-27</text><rect x=\"205\" y=\"90\" width=\"159\" height=\"30\" fill=\"#2d6a9f\" rx=\"3\"/><text x=\"372\" y=\"110\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">17.1%</text><text x=\"197\" y=\"156\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">China</text><rect x=\"205\" y=\"136\" width=\"134\" height=\"30\" fill=\"#f0a500\" rx=\"3\"/><text x=\"347\" y=\"156\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">14.4%</text><text x=\"197\" y=\"202\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Russland</text><rect x=\"205\" y=\"182\" width=\"63\" height=\"30\" fill=\"#2d8a6a\" rx=\"3\"/><text x=\"276\" y=\"202\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">6.8%</text><text x=\"197\" y=\"248\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Indien</text><rect x=\"205\" y=\"228\" width=\"31\" height=\"30\" fill=\"#7b4fa6\" rx=\"3\"/><text x=\"244\" y=\"248\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">3.4%</text><text x=\"197\" y=\"294\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Ärmste 46 Länder</text><rect x=\"205\" y=\"274\" width=\"35\" height=\"30\" fill=\"#e07b2a\" rx=\"3\"/><text x=\"248\" y=\"294\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">3.8%</text><text x=\"20\" y=\"338\" font-size=\"11\" fill=\"#9ca3af\" font-family=\"sans-serif\">Quelle: Global Carbon Project 2023</text></svg>"
+}
