@@ -23,22 +23,22 @@
       {
         "label": "EU-27",
         "wert": 17.1,
-        "farbe": "rot"
+        "farbe": "blau"
       },
       {
         "label": "China",
         "wert": 14.4,
-        "farbe": "blau"
+        "farbe": "orange"
       },
       {
         "label": "Russland",
         "wert": 6.8,
-        "farbe": "blau"
+        "farbe": "gelb"
       },
       {
         "label": "Indien",
         "wert": 3.4,
-        "farbe": "grau"
+        "farbe": "grün"
       },
       {
         "label": "Ärmste 46 Länder",
