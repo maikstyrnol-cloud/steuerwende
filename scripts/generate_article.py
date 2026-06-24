@@ -173,7 +173,8 @@ def build_svg_balken(info):
     daten = info.get("daten", [])
     if not daten:
         return ""
-    farben = {"rot": "#c8102e", "blau": "#2d6a9f", "grau": "#9ca3af", "gold": "#f0a500"}
+    # Feste Palette – jeder Balken bekommt automatisch eine eigene Farbe, nie doppelt
+    PALETTE = ["#c8102e", "#2d6a9f", "#f0a500", "#2d8a6a", "#7b4fa6", "#e07b2a"]
     max_wert = max(d["wert"] for d in daten)
     if max_wert == 0:
         max_wert = 1
@@ -188,7 +189,7 @@ def build_svg_balken(info):
     for i, d in enumerate(daten):
         y = 44 + i * (bar_h + gap)
         w = max(3, int((d["wert"] / max_wert) * bar_max_w))
-        farbe = farben.get(d.get("farbe", "blau"), "#2d6a9f")
+        farbe = PALETTE[i % len(PALETTE)]
         if d["wert"] >= 1000:
             einheit = " Mrd."
         else:
