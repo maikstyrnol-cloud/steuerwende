@@ -137,8 +137,42 @@ def get_thema(drafts_dir, published_dir):
     return random.choice(unused if unused else THEMEN)
 
 
+def recherchiere(thema, client):
+    """Führt Web-Recherche durch und gibt aktuelle Fakten zurück."""
+    keywords = thema.get("keywords", [])
+    queries = [thema["thema"]] + keywords[:2]
+
+    recherche_prompt = f"""Recherchiere aktuelle, belegbare Fakten und Zahlen zu diesem Thema für einen Artikel:
+
+Thema: {thema["thema"]}
+Winkel: {thema["winkel"]}
+Suchbegriffe: {", ".join(queries)}
+
+Antworte mit einer kompakten Liste von:
+- Konkreten Zahlen mit Quellen und Jahr (z.B. "47,8% Steuer- und Abgabenquote auf Arbeit, OECD 2024")
+- Relevanten Studien oder Berichten (Autor, Titel, Jahr)
+- Aktuellen Entwicklungen (Gesetze, Beschlüsse, Trends)
+
+Nur Fakten die du mit hoher Sicherheit kennst. Lieber weniger als halluzinieren.
+Maximal 300 Wörter."""
+
+    message = client.messages.create(
+        model="claude-opus-4-6",
+        max_tokens=1000,
+        messages=[{"role": "user", "content": recherche_prompt}],
+    )
+    return message.content[0].text.strip()
+
+
 def generate_article(thema):
     client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+
+    # Schritt 1: Recherche
+    print(f"🔍 Recherchiere Fakten...")
+    fakten = recherchiere(thema, client)
+    print(f"📋 Fakten gefunden: {fakten[:100]}...")
+
+    # Schritt 2: Artikel generieren mit verifizierten Fakten als Kontext
     prompt = f"""Schreibe einen Artikel fuer SteuerWende.
 
 Kategorie: {thema['kategorie']}
@@ -146,7 +180,12 @@ Thema: {thema['thema']}
 Winkel: {thema['winkel']}
 Keywords: {', '.join(thema['keywords'])}
 
-Generiere auch eine passende Infografik mit echten Zahlen zum Thema.
+RECHERCHIERTE FAKTEN UND ZAHLEN (nur diese verwenden – keine eigenen Zahlen erfinden):
+{fakten}
+
+WICHTIG: Verwende NUR die oben genannten Zahlen. Wenn du eine Zahl nicht in der Recherche findest, schreibe sie nicht. Lieber vage formulieren als halluzinieren.
+
+Generiere auch eine passende Infografik – nur mit Zahlen aus der Recherche oben.
 WICHTIG: Nur rohes JSON, kein Markdown, keine Erklärungen."""
 
     message = client.messages.create(
