@@ -192,7 +192,7 @@ def build_article_page(article, out):
     <div class="article-body container">
       {"<div class='infografik-wrap'>" + article["infografik_svg"] + "</div>" if article.get("infografik_svg") else ""}
       {article.get("inhalt","")}
-      <div class="sources-box"><h3>Quellen & Belege</h3><ol>{quellen_html}</ol></div>
+      <div class="hinweis-redaktion">⚠️ Artikel werden redaktionell vorgeprüft. Fehler möglich – Hinweise an <a href="mailto:redaktion@steuerwende.de">redaktion@steuerwende.de</a></div><div class="sources-box"><h3>Quellen & Belege</h3><ol>{quellen_html}</ol></div>
     </div>
     <div class="article-footer container">
       <div class="tags">{tags_html}</div>
