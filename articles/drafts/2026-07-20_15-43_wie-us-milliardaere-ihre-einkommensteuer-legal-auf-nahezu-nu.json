@@ -1,0 +1,94 @@
+{
+  "titel": "Wie US-Milliardäre ihre Einkommensteuer legal auf nahezu null senken",
+  "untertitel": "ProPublica-Enthüllungen zeigen: Die reichsten Menschen der USA zahlen effektive Steuersätze, die weit unter denen von Durchschnittsverdienern liegen – und das völlig legal",
+  "kategorie": "Hintergrund",
+  "lesezeit": 7,
+  "inhalt": "<p>Im Juni 2021 veröffentlichte die US-Investigativredaktion ProPublica einen der bedeutendsten Steuerdatensätze der Geschichte: Tausende Seiten vertraulicher Steuererklärungen der reichsten Personen der USA. Das Ergebnis erschütterte das Vertrauen in das amerikanische Steuersystem – und lieferte zugleich eine Blaupause für ein globales Problem.</p><h3>Vermögen wächst, Steuern bleiben aus</h3><p>Zwischen 2014 und 2018 wuchs das Vermögen der 25 reichsten US-Bürger laut ProPublica um insgesamt 401 Milliarden Dollar. Im selben Zeitraum zahlten sie zusammen lediglich 13,6 Milliarden Dollar an Bundeseinkommensteuer – ein effektiver Steuersatz von nur 3,4 Prozent, bezogen auf den Vermögenszuwachs. Zum Vergleich: Ein durchschnittlicher US-Haushalt mit einem Jahreseinkommen von rund 70.000 Dollar zahlt einen effektiven Steuersatz von etwa 14 Prozent.</p><h3>Das System dahinter: Buy, Borrow, Die</h3><p>Die Strategie ist unter Steuerexperten als «Buy, Borrow, Die» bekannt. Sie funktioniert in drei Schritten: Erstens halten Milliardäre ihr Vermögen in Aktien, Immobilien und anderen Anlagen, die im Wert steigen, aber kein steuerpflichtiges Einkommen erzeugen – denn unrealisierte Kursgewinne werden in den USA nicht besteuert. Zweitens nehmen sie günstige Kredite auf, besichert durch ihr Aktienportfolio, um ihren Lebensunterhalt zu finanzieren. Kreditaufnahmen gelten nicht als Einkommen. Drittens werden die Vermögenswerte beim Tod an die Erben übertragen – mit einer sogenannten «stepped-up basis», die sämtliche aufgelaufenen Kursgewinne steuerfrei stellt.</p><p>Gabriel Zucman, Ökonom an der Universität Berkeley und einer der weltweit führenden Forscher zu Steuervermeidung, hat dieses System in seinem Buch «The Triumph of Injustice» gemeinsam mit Emmanuel Saez detailliert analysiert. Ihre Berechnungen zeigen: Die 400 reichsten US-Familien zahlten 2018 einen niedrigeren Gesamtsteuersatz als die ärmste Hälfte der Bevölkerung – ein historischer Wendepunkt.</p><h3>Ein globales Muster</h3><p>Die Befunde sind keineswegs auf die USA beschränkt. Das Tax Justice Network schätzt, dass weltweit jährlich rund 483 Milliarden Dollar an Steuereinnahmen durch Steuervermeidung und -hinterziehung verloren gehen. Jayati Ghosh, Ökonomin an der University of Massachusetts Amherst und ehemalige UN-Beraterin, weist darauf hin, dass Länder des Globalen Südens besonders betroffen sind: «Was in den USA legal ist, wird durch internationale Steuerstrukturen in Entwicklungsländern zum existenziellen Problem – dort fehlen die Einnahmen für Gesundheit, Bildung und Infrastruktur.»</p><h3>Reformdebatte gewinnt an Dynamik</h3><p>Die ProPublica-Enthüllungen befeuerten die Debatte um eine Mindeststeuer für Superreiche. Die von der Biden-Regierung vorgeschlagene «Billionaire Minimum Income Tax» von 25 Prozent auf realisierte und unrealisierte Gewinne scheiterte im Kongress. Auf internationaler Ebene arbeiten Zucman und die EU Tax Observatory an einem Vorschlag für eine globale Mindeststeuer von zwei Prozent auf das Vermögen von Milliardären, die laut ihren Berechnungen jährlich rund 250 Milliarden Dollar einbringen könnte.</p><p>Joseph Stiglitz, Nobelpreisträger für Wirtschaftswissenschaften, fasst das Kernproblem zusammen: «Ein Steuersystem, in dem Krankenschwestern einen höheren effektiven Steuersatz zahlen als Milliardäre, hat seine Legitimität verloren.» Die ProPublica-Daten haben dieses Systemversagen nicht geschaffen – aber sie haben es für alle sichtbar gemacht.</p>",
+  "daten_highlight": {
+    "zahl": "3,4 %",
+    "beschreibung": "Effektiver Steuersatz der 25 reichsten US-Bürger auf ihren Vermögenszuwachs (2014–2018)",
+    "quelle": "ProPublica 2021"
+  },
+  "infografik": {
+    "typ": "balken",
+    "titel": "Effektive Steuersätze in den USA: Milliardäre vs. Durchschnittsverdiener",
+    "beschreibung": "Vergleich der effektiven Einkommensteuersätze verschiedener Einkommensgruppen in den USA – die reichsten Personen zahlen prozentual weniger als Durchschnittsverdiener",
+    "quelle": "ProPublica 2021, Saez/Zucman 2020",
+    "daten": [
+      {
+        "label": "Top-25-Milliardäre",
+        "wert": 3.4,
+        "farbe": "rot"
+      },
+      {
+        "label": "Reichste 400 Familien",
+        "wert": 8.2,
+        "farbe": "rot"
+      },
+      {
+        "label": "Obere Mittelschicht",
+        "wert": 14.0,
+        "farbe": "blau"
+      },
+      {
+        "label": "Durchschnittshaushalt",
+        "wert": 14.0,
+        "farbe": "blau"
+      },
+      {
+        "label": "Ärmste 50 %",
+        "wert": 10.6,
+        "farbe": "grau"
+      }
+    ]
+  },
+  "quellen": [
+    {
+      "autor": "ProPublica",
+      "titel": "The Secret IRS Files: Trove of Never-Before-Seen Records Reveal How the Wealthiest Avoid Income Tax",
+      "jahr": 2021,
+      "url": "https://www.propublica.org/article/the-secret-irs-files-trove-of-never-before-seen-records-reveal-how-the-wealthiest-avoid-income-tax"
+    },
+    {
+      "autor": "Emmanuel Saez, Gabriel Zucman",
+      "titel": "The Triumph of Injustice: How the Rich Dodge Taxes and How to Make Them Pay",
+      "jahr": 2019,
+      "url": "https://wwnorton.com/books/the-triumph-of-injustice"
+    },
+    {
+      "autor": "EU Tax Observatory",
+      "titel": "Global Tax Evasion Report 2024",
+      "jahr": 2024,
+      "url": "https://www.taxobservatory.eu/publication/global-tax-evasion-report-2024/"
+    },
+    {
+      "autor": "Tax Justice Network",
+      "titel": "State of Tax Justice 2023",
+      "jahr": 2023,
+      "url": "https://taxjustice.net/reports/the-state-of-tax-justice-2023/"
+    },
+    {
+      "autor": "Jayati Ghosh",
+      "titel": "Developing Countries and the Crisis of International Tax Architecture",
+      "jahr": 2022,
+      "url": "https://www.ilo.org/resource/conference-paper/developing-countries-and-crisis-international-tax-architecture"
+    }
+  ],
+  "seo_beschreibung": "ProPublica-Daten zeigen: Die reichsten US-Bürger zahlen effektive Steuersätze von nur 3,4 Prozent. Wie das System Buy, Borrow, Die funktioniert und warum es ein globales Problem ist.",
+  "tags": [
+    "ProPublica Milliardäre Steuern",
+    "USA Steuervermeidung",
+    "Buffett Steuer",
+    "Buy Borrow Die",
+    "Vermögenssteuer",
+    "Gabriel Zucman",
+    "Steuergerechtigkeit"
+  ],
+  "infografik_svg": "<svg viewBox=\"0 0 535 300\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:560px;display:block;margin:0 auto;\"><text x=\"20\" y=\"24\" font-size=\"14\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">Effektive Steuersätze in den USA: Milliardäre vs. Durchschnittsve</text><text x=\"197\" y=\"64\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Top-25-Milliardäre</text><rect x=\"205\" y=\"44\" width=\"55\" height=\"30\" fill=\"#c8102e\" rx=\"3\"/><text x=\"268\" y=\"64\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">3.4%</text><text x=\"197\" y=\"110\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Reichste 400 Familien</text><rect x=\"205\" y=\"90\" width=\"134\" height=\"30\" fill=\"#2d6a9f\" rx=\"3\"/><text x=\"347\" y=\"110\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">8.2%</text><text x=\"197\" y=\"156\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Obere Mittelschicht</text><rect x=\"205\" y=\"136\" width=\"230\" height=\"30\" fill=\"#f0a500\" rx=\"3\"/><text x=\"443\" y=\"156\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">14.0%</text><text x=\"197\" y=\"202\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Durchschnittshaushalt</text><rect x=\"205\" y=\"182\" width=\"230\" height=\"30\" fill=\"#2d8a6a\" rx=\"3\"/><text x=\"443\" y=\"202\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">14.0%</text><text x=\"197\" y=\"248\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Ärmste 50 %</text><rect x=\"205\" y=\"228\" width=\"174\" height=\"30\" fill=\"#7b4fa6\" rx=\"3\"/><text x=\"387\" y=\"248\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">10.6%</text><text x=\"20\" y=\"292\" font-size=\"11\" fill=\"#9ca3af\" font-family=\"sans-serif\">Quelle: ProPublica 2021, Saez/Zucman 2020</text></svg>",
+  "_meta": {
+    "erstellt": "2026-07-20T15:43:49.345084",
+    "status": "entwurf",
+    "slug": "wie-us-milliardaere-ihre-einkommensteuer-legal-auf-nahezu-nu",
+    "filename": "2026-07-20_15-43_wie-us-milliardaere-ihre-einkommensteuer-legal-auf-nahezu-nu.json"
+  }
+}
