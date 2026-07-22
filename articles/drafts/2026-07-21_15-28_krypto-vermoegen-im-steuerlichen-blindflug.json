@@ -1,0 +1,90 @@
+{
+  "titel": "Krypto-Vermögen im steuerlichen Blindflug",
+  "untertitel": "Bis zu 80 Prozent der Krypto-Gewinne werden weltweit nicht korrekt versteuert – Deutschland verlässt sich auf Selbstauskunft",
+  "kategorie": "Wirtschaft",
+  "lesezeit": 6,
+  "inhalt": "<p>Während die Finanzverwaltung bei Bankzinsen, Aktiendividenden und Immobilienverkäufen längst auf automatische Meldeverfahren setzt, bleibt das rasant wachsende Krypto-Universum ein weitgehend steuerlicher Blindfleck. Das globale Krypto-Transaktionsvolumen lag laut Chainalysis allein im Jahr 2022 bei über 18 Billionen US-Dollar. Doch ein Großteil dieser Werte wird steuerlich nie erfasst.</p><h3>Die deutsche Regelung: Freiheit durch Haltefrist</h3><p>In Deutschland gelten Krypto-Gewinne nach §23 des Einkommensteuergesetzes als private Veräußerungsgeschäfte. Wer Bitcoin, Ethereum oder andere Token länger als ein Jahr hält, zahlt auf den Gewinn – egal wie hoch – keine Steuern. Unterhalb der Jahresfrist greift der persönliche Einkommensteuersatz von bis zu 45 Prozent, wobei eine Freigrenze von 600 Euro pro Jahr gilt. Das Problem: Die Angabe in der Steuererklärung basiert vollständig auf Selbstauskunft. Eine systematische Erfassung von Krypto-Vermögen existiert in Deutschland nicht.</p><h3>Globale Steuerlücke: Drei von vier Euro entgehen dem Fiskus</h3><p>Der \"Global Tax Evasion Report 2024\" des EU Tax Observatory unter Leitung von Gabriel Zucman schätzt, dass weltweit rund 75 bis 80 Prozent der Krypto-Gewinne nicht korrekt versteuert werden. Diese Dimension übersteigt die Steuerhinterziehungsquote bei klassischen Bankkonten deutlich – dort hat der automatische Informationsaustausch seit 2017 die Compliance massiv verbessert. Für Kryptowährungen fehlt ein vergleichbares System bislang.</p><h3>DAC8 und CARF: Hoffnung auf Transparenz ab 2026</h3><p>Zwei regulatorische Initiativen könnten die Lage verändern. Die im Oktober 2023 verabschiedete EU-Richtlinie DAC8 verpflichtet Krypto-Dienstleister ab 2026 zur automatischen Meldung von Transaktionsdaten an die Steuerbehörden – analog zum bestehenden Common Reporting Standard für Bankkonten. Parallel hat die OECD mit dem Crypto-Asset Reporting Framework (CARF) einen internationalen Standard geschaffen, dem sich bereits 48 Länder zur Umsetzung bis 2027 verpflichtet haben.</p><h3>DeFi bleibt das schwarze Loch</h3><p>Doch beide Rahmenwerke stoßen an eine strukturelle Grenze: Dezentralisierte Finanzprotokolle (DeFi) und Self-Custody-Wallets, bei denen Nutzerinnen und Nutzer ihre Kryptowerte ohne Intermediär verwalten, bleiben schwer erfassbar. Es gibt keinen zentralen Dienstleister, der Daten melden könnte. Der Bundesrechnungshof hat zudem auf die begrenzten technischen Kapazitäten von BaFin und Finanzämtern zur Blockchain-Analyse hingewiesen.</p><h3>Was sich ändern müsste</h3><p>Jayati Ghosh, Ökonomin an der University of Massachusetts Amherst und Mitglied der UN-Kommission für Entwicklungspolitik, betont, dass Krypto-Regulierung nicht nur ein Thema für Industrieländer ist. Steuervermeidung über digitale Vermögenswerte trifft Entwicklungsländer besonders hart, da ihnen die institutionellen Kapazitäten zur Durchsetzung fehlen. Für Deutschland bedeutet das: Die MiCA-Verordnung, die seit Dezember 2024 vollständig gilt, reguliert zwar den Markt – aber primär zum Verbraucherschutz, nicht zur Steuerdurchsetzung. Eine echte Lösung erfordert verpflichtende On-Chain-Analysetools für Finanzbehörden, die Schließung der DeFi-Lücke in DAC8 und politischen Willen, Krypto-Vermögen genauso konsequent zu erfassen wie jedes Bankkonto.</p>",
+  "daten_highlight": {
+    "zahl": "75–80%",
+    "beschreibung": "der Krypto-Gewinne werden weltweit nicht korrekt versteuert",
+    "quelle": "EU Tax Observatory, Global Tax Evasion Report 2024"
+  },
+  "infografik": {
+    "typ": "balken",
+    "titel": "Krypto-Besteuerung: Regulatorischer Zeitplan",
+    "beschreibung": "Wann neue Meldepflichten für Krypto-Vermögen greifen – und wie viele Länder mitmachen",
+    "quelle": "EU/OECD 2023–2024",
+    "daten": [
+      {
+        "label": "Nicht korrekt versteuerte Krypto-Gewinne weltweit",
+        "wert": 80,
+        "farbe": "rot"
+      },
+      {
+        "label": "Länder mit CARF-Verpflichtung bis 2027",
+        "wert": 48,
+        "farbe": "blau"
+      },
+      {
+        "label": "DAC8 – Meldepflicht ab (Jahr)",
+        "wert": 2026,
+        "farbe": "grau"
+      },
+      {
+        "label": "CARF – Umsetzungsziel (Jahr)",
+        "wert": 2027,
+        "farbe": "grau"
+      }
+    ]
+  },
+  "quellen": [
+    {
+      "autor": "Zucman, Gabriel et al.",
+      "titel": "Global Tax Evasion Report 2024",
+      "jahr": 2024,
+      "url": "https://www.taxobservatory.eu/publication/global-tax-evasion-report-2024/"
+    },
+    {
+      "autor": "Chainalysis",
+      "titel": "The 2023 Geography of Cryptocurrency Report",
+      "jahr": 2023,
+      "url": "https://www.chainalysis.com/blog/2023-geography-of-cryptocurrency-report/"
+    },
+    {
+      "autor": "Rat der Europäischen Union",
+      "titel": "DAC8 – Richtlinie zum automatischen Informationsaustausch für Krypto-Assets",
+      "jahr": 2023,
+      "url": "https://www.consilium.europa.eu/de/press/press-releases/2023/10/17/rules-on-exchange-of-information-on-crypto-assets/"
+    },
+    {
+      "autor": "OECD",
+      "titel": "Crypto-Asset Reporting Framework (CARF)",
+      "jahr": 2023,
+      "url": "https://www.oecd.org/tax/exchange-of-tax-information/crypto-asset-reporting-framework-and-amendments-to-the-common-reporting-standard.htm"
+    },
+    {
+      "autor": "Ghosh, Jayati",
+      "titel": "Digitale Vermögenswerte und Steuergerechtigkeit in Entwicklungsländern",
+      "jahr": 2023,
+      "url": "https://www.networkideas.org/"
+    }
+  ],
+  "seo_beschreibung": "Bis zu 80 Prozent der Krypto-Gewinne werden weltweit nicht versteuert. Wie Deutschland Krypto-Vermögen steuerlich behandelt, warum DeFi ein Problem bleibt und was DAC8 und CARF ändern sollen.",
+  "tags": [
+    "Krypto Steuer Deutschland",
+    "Bitcoin Steuern",
+    "DeFi Steuer",
+    "Kryptowährungen",
+    "Steuervermeidung",
+    "DAC8",
+    "CARF",
+    "Steuergerechtigkeit"
+  ],
+  "infografik_svg": "<svg viewBox=\"0 0 535 254\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:560px;display:block;margin:0 auto;\"><text x=\"20\" y=\"24\" font-size=\"14\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">Krypto-Besteuerung: Regulatorischer Zeitplan</text><text x=\"197\" y=\"64\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Nicht korrekt versteuerte Kryp</text><rect x=\"205\" y=\"44\" width=\"9\" height=\"30\" fill=\"#c8102e\" rx=\"3\"/><text x=\"222\" y=\"64\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">80%</text><text x=\"197\" y=\"110\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Länder mit CARF-Verpflichtung </text><rect x=\"205\" y=\"90\" width=\"5\" height=\"30\" fill=\"#2d6a9f\" rx=\"3\"/><text x=\"218\" y=\"110\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">48%</text><text x=\"197\" y=\"156\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">DAC8 – Meldepflicht ab (Jahr)</text><rect x=\"205\" y=\"136\" width=\"229\" height=\"30\" fill=\"#f0a500\" rx=\"3\"/><text x=\"442\" y=\"156\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">2026 Mrd.</text><text x=\"197\" y=\"202\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">CARF – Umsetzungsziel (Jahr)</text><rect x=\"205\" y=\"182\" width=\"230\" height=\"30\" fill=\"#2d8a6a\" rx=\"3\"/><text x=\"443\" y=\"202\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">2027 Mrd.</text><text x=\"20\" y=\"246\" font-size=\"11\" fill=\"#9ca3af\" font-family=\"sans-serif\">Quelle: EU/OECD 2023–2024</text></svg>",
+  "_meta": {
+    "erstellt": "2026-07-21T15:28:32.209429",
+    "status": "entwurf",
+    "slug": "krypto-vermoegen-im-steuerlichen-blindflug",
+    "filename": "2026-07-21_15-28_krypto-vermoegen-im-steuerlichen-blindflug.json"
+  }
+}
