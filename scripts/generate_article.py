@@ -78,6 +78,12 @@ SYSTEM_PROMPT = """Du bist Redakteur bei SteuerWende. Antworte NUR mit rohem JSO
 
 WICHTIGSTE REGEL: Schreibe NIEMALS über einzelne namentlich genannte Personen. Nur über Systeme, Strukturen, Gesetze und Statistiken.
 
+JSON-FORMAT – ABSOLUT KRITISCH: Das Ergebnis muss syntaktisch perfektes JSON sein.
+- Verwende NIEMALS gerade doppelte Anführungszeichen (") innerhalb von Textwerten – auch nicht für Zitate
+- Für Zitate im Fließtext verwende stattdessen: einfache Anführungszeichen (') oder umschreibe als indirekte Rede
+- Prüfe vor der Ausgabe: jedes " im JSON darf NUR als String-Begrenzer dienen, nie innerhalb eines Strings
+- Keine typografischen Anführungszeichen ("" '') im Text
+
 SPRACHE – ABSOLUT KRITISCH: Schreibe IMMER korrektes Deutsch mit Umlauten:
 - ä: täglich, während, ärmste, häufig, stärker, Länder, jährlich, europäisch
 - ö: höher, möglich, Vermögen, Börse, größer, Österreich
@@ -204,7 +210,37 @@ WICHTIG: Nur rohes JSON, kein Markdown, keine Erklärungen."""
     if start == -1 or end == 0:
         raise ValueError(f"Kein JSON gefunden: {raw[:200]}")
 
-    return json.loads(raw[start:end])
+    json_str = raw[start:end]
+
+    try:
+        return json.loads(json_str)
+    except json.JSONDecodeError as e:
+        print(f"⚠️  JSON-Fehler an Position {e.pos}: {e.msg}")
+        print(f"   Kontext: ...{json_str[max(0,e.pos-60):e.pos+60]}...")
+        # Reparaturversuch: Claude nochmal bitten, valides JSON zu liefern
+        repair_prompt = f"""Das folgende JSON ist ungueltig (Fehler: {e.msg} an Position {e.pos}).
+Wahrscheinliche Ursache: nicht escapte Anfuehrungszeichen oder Sonderzeichen im Text.
+
+Gib das KOMPLETTE JSON erneut aus, diesmal syntaktisch valide.
+Escape alle doppelten Anfuehrungszeichen innerhalb von String-Werten mit \\".
+Ersetze typografische Anfuehrungszeichen (" " ' ') durch normale Apostrophe wo noetig.
+Antworte NUR mit dem reparierten, rohen JSON - keine Erklaerung.
+
+Fehlerhaftes JSON:
+{json_str}"""
+
+        repair_message = client.messages.create(
+            model="claude-opus-4-6",
+            max_tokens=6000,
+            messages=[{"role": "user", "content": repair_prompt}],
+        )
+        repaired = repair_message.content[0].text.strip()
+        repaired = re.sub(r'```(?:json)?', '', repaired).strip()
+        r_start = repaired.find("{")
+        r_end = repaired.rfind("}") + 1
+        if r_start == -1 or r_end == 0:
+            raise ValueError(f"Reparatur fehlgeschlagen, kein JSON gefunden: {repaired[:200]}")
+        return json.loads(repaired[r_start:r_end])
 
 
 def build_svg_balken(info):
