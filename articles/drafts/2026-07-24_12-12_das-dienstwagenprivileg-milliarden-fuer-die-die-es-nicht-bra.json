@@ -1,0 +1,83 @@
+{
+  "titel": "Das Dienstwagenprivileg: Milliarden für die, die es nicht brauchen",
+  "untertitel": "Deutschland subventioniert Firmenwagen mit Milliarden Euro jährlich – ein Steuervorteil, der fast ausschließlich Gutverdienern zugutekommt",
+  "kategorie": "Gesellschaft",
+  "lesezeit": 6,
+  "inhalt": "<p>Rund 5 Millionen Firmenwagen rollen über deutsche Straßen. Was zunächst nach einem alltäglichen Wirtschaftsphänomen klingt, entpuppt sich bei genauerem Hinsehen als eine der größten und sozial ungerechtesten Steuersubventionen des Landes: das sogenannte Dienstwagenprivileg. Laut Umweltbundesamt entgehen dem Staat dadurch jährlich rund 3,1 Milliarden Euro an Steuereinnahmen. Je nach Berechnungsmethode liegen Schätzungen sogar noch höher.</p><h2>Wie funktioniert der Steuervorteil?</h2><p>Im Kern geht es um die sogenannte 1-Prozent-Regelung: Wer einen Firmenwagen auch privat nutzen darf, muss dafür monatlich pauschal nur 1 Prozent des Bruttolistenpreises als geldwerten Vorteil versteuern. Für ein Fahrzeug mit einem Listenpreis von 60.000 Euro bedeutet das: lediglich 600 Euro monatlich werden dem zu versteuernden Einkommen hinzugerechnet. Die tatsächlichen Kosten einer vergleichbaren privaten Pkw-Nutzung – Versicherung, Kraftstoff, Verschleiß, Wertverlust – liegen in aller Regel deutlich höher. Der Arbeitgeber wiederum kann sämtliche Fahrzeugkosten als Betriebsausgaben absetzen. Für Elektroautos und Plug-in-Hybride gelten seit 2019 noch günstigere Sätze von 0,25 beziehungsweise 0,5 Prozent – ein zusätzlicher Anreiz, der bis Ende 2030 verlängert wurde.</p><h2>Ein Privileg für Besserverdienende</h2><p>Die Verteilungswirkung dieses Systems ist eindeutig. Eine Studie des Deutschen Instituts für Wirtschaftsforschung (DIW) von Stefan Bach aus dem Jahr 2020 kommt zu einem klaren Ergebnis: Das Dienstwagenprivileg wirkt regressiv. Es begünstigt überproportional hohe Einkommensgruppen. Dienstwagen werden in der Praxis vor allem Beschäftigten mit einem Bruttoeinkommen ab etwa 50.000 bis 60.000 Euro gestellt. Geringverdiener, Teilzeitbeschäftigte oder Arbeitnehmerinnen und Arbeitnehmer in Berufen ohne Firmenwagen-Tradition haben praktisch keinen Zugang zu diesem Steuervorteil. Wer an der Supermarktkasse, in der Pflege oder auf dem Bau arbeitet, finanziert über das allgemeine Steuersystem einen Vorteil mit, von dem andere profitieren.</p><h2>Umweltschädlich und teuer</h2><p>Das Forum Ökologisch-Soziale Marktwirtschaft (FÖS) schätzt die Gesamtsubventionswirkung – einschließlich der Entfernungspauschale – auf bis zu 5,5 Milliarden Euro jährlich. Dienstwagen machen etwa zwei Drittel der Neuzulassungen in oberen Fahrzeugsegmenten aus, also genau dort, wo besonders große und verbrauchsstarke Modelle dominieren. Sowohl die OECD als auch der IWF empfehlen seit Jahren den Abbau klimaschädlicher Subventionen – das Dienstwagenprivileg wird dabei regelmäßig als Beispiel genannt. Auch die deutsche Expertenkommission für Klimaschutz hat wiederholt eine Reform angemahnt.</p><h2>Politischer Stillstand</h2><p>Trotz aller Evidenz blieb eine Reform bislang aus. Die Ampel-Koalition diskutierte das Thema zwischen 2021 und 2025, beschloss aber keine Abschaffung. Das Dienstwagenprivileg steht exemplarisch für ein Grundproblem des deutschen Steuersystems: Subventionen, die einmal eingeführt wurden, überdauern Jahrzehnte – unabhängig davon, ob sie gerecht, ökologisch sinnvoll oder ökonomisch effizient sind. 3,1 Milliarden Euro jährlich – damit ließen sich Schulen sanieren, der ÖPNV ausbauen oder Geringverdiener entlasten. Stattdessen fließt das Geld in ein System, das vor allem jenen nützt, die ohnehin am meisten verdienen.</p>",
+  "daten_highlight": {
+    "zahl": "3,1 Mrd. €",
+    "beschreibung": "Jährliche Steuermindereinnahmen durch das Dienstwagenprivileg in Deutschland",
+    "quelle": "Umweltbundesamt 2021"
+  },
+  "infografik": {
+    "typ": "balken",
+    "titel": "Wer profitiert vom Dienstwagenprivileg?",
+    "beschreibung": "Geschätzte jährliche Steuersubventionen für Firmenwagen in Deutschland – je nach Berechnungsmethode",
+    "quelle": "UBA 2021, FÖS/Greenpeace 2022",
+    "daten": [
+      {
+        "label": "UBA-Schätzung (Dienstwagen)",
+        "wert": 3.1,
+        "farbe": "rot"
+      },
+      {
+        "label": "FÖS-Schätzung (inkl. Pendlerpauschale)",
+        "wert": 5.5,
+        "farbe": "rot"
+      },
+      {
+        "label": "Firmenwagen in Deutschland (Mio.)",
+        "wert": 5.0,
+        "farbe": "grau"
+      }
+    ]
+  },
+  "quellen": [
+    {
+      "autor": "Umweltbundesamt",
+      "titel": "Umweltschädliche Subventionen in Deutschland",
+      "jahr": 2021,
+      "url": "https://www.umweltbundesamt.de/publikationen/umweltschaedliche-subventionen-in-deutschland-0"
+    },
+    {
+      "autor": "Stefan Bach (DIW Berlin)",
+      "titel": "Analyse der Verteilungswirkung des Dienstwagenprivilegs",
+      "jahr": 2020,
+      "url": "https://www.diw.de/de/diw_01.c.785988.de/publikationen.html"
+    },
+    {
+      "autor": "Forum Ökologisch-Soziale Marktwirtschaft (FÖS)",
+      "titel": "Dienstwagenbesteuerung – Analyse im Auftrag von Greenpeace",
+      "jahr": 2022,
+      "url": "https://foes.de/publikationen/"
+    },
+    {
+      "autor": "OECD",
+      "titel": "OECD Economic Surveys: Germany – Recommendations on fossil fuel subsidies",
+      "jahr": 2023,
+      "url": "https://www.oecd.org/economy/germany-economic-snapshot/"
+    },
+    {
+      "autor": "Kraftfahrt-Bundesamt",
+      "titel": "Fahrzeugbestand und Neuzulassungen in Deutschland",
+      "jahr": 2024,
+      "url": "https://www.kba.de/DE/Statistik/Fahrzeuge/fahrzeuge_node.html"
+    }
+  ],
+  "seo_beschreibung": "Das Dienstwagenprivileg kostet Deutschland über 3 Milliarden Euro jährlich und begünstigt fast ausschließlich Gutverdiener. Analyse der Verteilungswirkung und Reformblockade.",
+  "tags": [
+    "Dienstwagenprivileg Kosten",
+    "Firmenwagen Steuer",
+    "Kfz Subvention",
+    "Steuergerechtigkeit",
+    "Klimasubventionen",
+    "Umweltschädliche Subventionen"
+  ],
+  "infografik_svg": "<svg viewBox=\"0 0 535 208\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%;max-width:560px;display:block;margin:0 auto;\"><text x=\"20\" y=\"24\" font-size=\"14\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">Wer profitiert vom Dienstwagenprivileg?</text><text x=\"197\" y=\"64\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">UBA-Schätzung (Dienstwagen)</text><rect x=\"205\" y=\"44\" width=\"129\" height=\"30\" fill=\"#c8102e\" rx=\"3\"/><text x=\"342\" y=\"64\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">3.1%</text><text x=\"197\" y=\"110\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">FÖS-Schätzung (inkl. Pendlerpa</text><rect x=\"205\" y=\"90\" width=\"230\" height=\"30\" fill=\"#2d6a9f\" rx=\"3\"/><text x=\"443\" y=\"110\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">5.5%</text><text x=\"197\" y=\"156\" text-anchor=\"end\" font-size=\"12\" fill=\"#4b5563\" font-family=\"sans-serif\">Firmenwagen in Deutschland (Mi</text><rect x=\"205\" y=\"136\" width=\"209\" height=\"30\" fill=\"#f0a500\" rx=\"3\"/><text x=\"422\" y=\"156\" font-size=\"13\" font-weight=\"bold\" fill=\"#1a2332\" font-family=\"sans-serif\">5.0%</text><text x=\"20\" y=\"200\" font-size=\"11\" fill=\"#9ca3af\" font-family=\"sans-serif\">Quelle: UBA 2021, FÖS/Greenpeace 2022</text></svg>",
+  "_meta": {
+    "erstellt": "2026-07-24T12:12:36.242421",
+    "status": "entwurf",
+    "slug": "das-dienstwagenprivileg-milliarden-fuer-die-die-es-nicht-bra",
+    "filename": "2026-07-24_12-12_das-dienstwagenprivileg-milliarden-fuer-die-die-es-nicht-bra.json"
+  }
+}
